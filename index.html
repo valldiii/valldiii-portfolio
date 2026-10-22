@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Valldiii - Freelance Web Developer & Mahasiswa Teknik Informatika. Membangun website yang cepat, berstruktur semantik, responsif, dan mudah digunakan.">
+  <meta name="author" content="Valldiii">
+  <meta name="theme-color" content="#05070f">
+  <title>VALLDIII — Freelance Web Developer</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=3.0">
+</head>
+<body>
+
+  <!-- ========================================================
+       1. HEADER & NAVBAR
+       ======================================================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <!-- Minimalist Text Logo -->
+      <a href="#home" class="brand-logo" aria-label="Valldiii - Kembali ke Beranda">
+        <span class="logo-text">VALLDIII</span>
+        <span class="logo-dot" aria-hidden="true">.</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Navigasi Utama">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-action">
+        <a href="#contact" class="btn btn-nav-cta">
+          <span>Let's Talk</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" width="15" height="15" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Buka menu navigasi mobile">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- ========================================================
+         2. HERO SECTION (EDITORIAL 2-COLUMN LAYOUT)
+         ======================================================== -->
+    <section class="hero-section" id="home">
+      <!-- Ambient Gradient Backlight -->
+      <div class="hero-glow-orb hero-orb-left" aria-hidden="true"></div>
+      <div class="hero-glow-orb hero-orb-right" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Kolom Kiri: Headline & Call To Actions -->
+        <div class="hero-col-content" data-reveal="fade-up">
+          <div class="hero-status-pill">
+            <span class="pulse-core"></span>
+            <span class="status-label">AVAILABLE FOR SELECT PROJECTS</span>
+          </div>
+
+          <h1 class="hero-headline">
+            I Build Digital <br>
+            <span class="headline-gradient">Experiences</span> <br>
+            That Matter<span class="accent-period">.</span>
+          </h1>
+
+          <p class="hero-lead">
+            Saya Valldiii, mahasiswa Teknik Informatika dan freelance web developer. Berfokus merancang website modern yang cepat, berstruktur semantik bersih, dan tampil presisi di setiap ukuran layar.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-work">
+              <span>View My Work</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="17" height="17" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Developer Telemetry Badges -->
+          <div class="hero-telemetry-strip">
+            <div class="telemetry-item">
+              <span class="telemetry-tag">01 // CODE</span>
+              <span class="telemetry-value">Semantic HTML &amp; CSS</span>
+            </div>
+            <div class="telemetry-separator" aria-hidden="true"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-tag">02 // LOGIC</span>
+              <span class="telemetry-value">Vanilla JavaScript</span>
+            </div>
+            <div class="telemetry-separator" aria-hidden="true"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-tag">03 // DESIGN</span>
+              <span class="telemetry-value">Fluid Mobile First</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: High-Fidelity Developer Browser & Code Mockup -->
+        <div class="hero-col-mockup" data-reveal="fade-left">
+          <div class="mockup-frame-card" aria-label="Mockup antarmuka website dan kode murni Valldiii">
+            <!-- Decorative Window Grid Header -->
+            <div class="mockup-window-topbar">
+              <div class="window-controls" aria-hidden="true">
+                <span class="ctrl-dot dot-close"></span>
+                <span class="ctrl-dot dot-minimize"></span>
+                <span class="ctrl-dot dot-maximize"></span>
+              </div>
+              <div class="window-address-tab">
+                <span class="addr-protocol">https://</span>valldiii.dev/portfolio/preview
+              </div>
+              <div class="window-status-badge">
+                <span class="status-live-dot"></span> LIVE 200 OK
+              </div>
+            </div>
+
+            <!-- Mockup Interactive Viewport -->
+            <div class="mockup-viewport">
+              <!-- Decorative Grid Lines -->
+              <div class="viewport-grid-bg" aria-hidden="true"></div>
+
+              <!-- Top Micro Nav -->
+              <div class="mock-browser-nav">
+                <div class="mock-nav-left">
+                  <span class="mock-brand-badge">VALLDIII.DEV</span>
+                  <span class="mock-nav-item active">Index.html</span>
+                  <span class="mock-nav-item">Style.css</span>
+                </div>
+                <div class="mock-nav-right">
+                  <span class="mock-build-pill">✓ Clean Code</span>
+                </div>
+              </div>
+
+              <!-- Visual Website Showcase Inside Mockup -->
+              <div class="mock-showcase-box">
+                <div class="mock-eyebrow-line">
+                  <span class="mock-num">01.0 // UI/UX</span>
+                  <span class="mock-line"></span>
+                  <span class="mock-chip">FAST LOAD</span>
+                </div>
+                <h3 class="mock-h3">Modern Interfaces Built with Precision.</h3>
+                <p class="mock-p">
+                  Arsitektur CSS Grid dan Flexbox mandiri tanpa overhead framework yang memperlambat rendering ponsel.
+                </p>
+
+                <!-- Mini Cards Component Demo -->
+                <div class="mock-metrics-row">
+                  <div class="mock-metric-card">
+                    <span class="metric-title">Performance</span>
+                    <span class="metric-num">100%</span>
+                    <div class="metric-bar"><div class="metric-fill" style="width: 100%;"></div></div>
+                  </div>
+                  <div class="mock-metric-card">
+                    <span class="metric-title">Mobile Ready</span>
+                    <span class="metric-num">Fluid</span>
+                    <div class="metric-bar"><div class="metric-fill" style="width: 95%;"></div></div>
+                  </div>
+                  <div class="mock-metric-card">
+                    <span class="metric-title">Zero Bloat</span>
+                    <span class="metric-num">0 kb Lib</span>
+                    <div class="metric-bar"><div class="metric-fill" style="width: 100%;"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Code Snippet Bar -->
+              <div class="mock-code-strip">
+                <div class="code-comment">// Developer Mindset</div>
+                <div class="code-line"><span class="c-keyword">const</span> developer = { <span class="c-prop">name</span>: <span class="c-str">'Valldiii'</span>, <span class="c-prop">major</span>: <span class="c-str">'Teknik Informatika'</span>, <span class="c-prop">mindset</span>: <span class="c-str">'Build with Purpose'</span> };</div>
+              </div>
+            </div>
+
+            <!-- Mockup Window Footer Terminal -->
+            <div class="mockup-window-footer">
+              <span class="term-left">⚡ Branch: <code>main</code> • Ready for select freelance projects</span>
+              <span class="term-right">Valldiii Studio // 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         3. ABOUT SECTION (EDITORIAL STATEMENT & STUDENT PROFILE)
+         ======================================================== -->
+    <section class="site-section about-section" id="about">
+      <div class="container">
+        <div class="section-badge-wrap" data-reveal="fade-up">
+          <span class="editorial-badge">01 // ABOUT ME</span>
+        </div>
+
+        <div class="about-grid">
+          <!-- Kolom Kiri: Cerita & Pendekatan Jujur -->
+          <div class="about-main-narrative" data-reveal="fade-up">
+            <h2 class="section-title">
+              Membangun website dengan fondasi yang kuat, rapi, dan bertanggung jawab.
+            </h2>
+            <div class="about-bio-text">
+              <p>
+                Halo! Saya <strong>Valldiii</strong>, mahasiswa aktif program studi <strong>Teknik Informatika</strong> yang memiliki minat mendalam dan fokus konsisten pada bidang pengembangan web front-end.
+              </p>
+              <p>
+                Di tengah pesatnya teknologi, saya meyakini bahwa website yang berkualitas lahir dari penguasaan fundamental yang kuat: <strong>HTML semantik</strong> untuk aksesibilitas dan struktur yang benar, <strong>CSS modern</strong> untuk tata letak yang luwes, serta <strong>JavaScript murni</strong> untuk interaktivitas yang gesit tanpa bloatware.
+              </p>
+              <p>
+                Sebagai pengembang yang terus bertumbuh, nilai utama yang saya bawa adalah <strong>kejujuran teknis, ketelitian penulisan kode, serta transparansi penuh</strong> dalam berkomunikasi dengan Anda.
+              </p>
+            </div>
+
+            <div class="about-action-row">
+              <a href="#contact" class="btn btn-primary btn-sm">
+                <span>Diskusikan Proyek Anda</span>
+              </a>
+              <a href="#projects" class="btn btn-outline btn-sm">
+                <span>Lihat Studi Kasus</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Bento Profile Highlights (Jujur & Relevan) -->
+          <div class="about-bento-grid" data-reveal="fade-left">
+            <!-- Bento Card 1 -->
+            <div class="bento-card">
+              <div class="bento-icon-tag">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
+              <h3 class="bento-title">Mahasiswa Teknik Informatika</h3>
+              <p class="bento-desc">
+                Mempelajari ilmu komputasi, algoritma logika terstruktur, rekayasa perangkat lunak, dan standar pengembangan web modern.
+              </p>
+              <span class="bento-meta">Pendidikan &amp; Teori Dasar</span>
+            </div>
+
+            <!-- Bento Card 2 -->
+            <div class="bento-card">
+              <div class="bento-icon-tag">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h3 class="bento-title">Clean Code &amp; Mobile First</h3>
+              <p class="bento-desc">
+                Menyusun kode yang terstruktur rapi, mudah dibaca, dan selalu diuji coba di berbagai ukuran layar smartphone maupun laptop.
+              </p>
+              <span class="bento-meta">Standar Implementasi</span>
+            </div>
+
+            <!-- Bento Card 3 -->
+            <div class="bento-card">
+              <div class="bento-icon-tag">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              </div>
+              <h3 class="bento-title">Bebas Bloat &amp; Ringan</h3>
+              <p class="bento-desc">
+                Tidak menggunakan template berat atau library berlebih yang dapat membuat waktu loading website Anda lambat bagi pengunjung.
+              </p>
+              <span class="bento-meta">Prinsip Kinerja</span>
+            </div>
+
+            <!-- Bento Card 4 -->
+            <div class="bento-card">
+              <div class="bento-icon-tag">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+              </div>
+              <h3 class="bento-title">Komunikasi Transparan</h3>
+              <p class="bento-desc">
+                Memberikan estimasi waktu pengerjaan yang realistis, update bertahap yang jelas, dan respons cepat via WhatsApp maupun Email.
+              </p>
+              <span class="bento-meta">Komitmen Layanan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. TECH STACK SECTION (FOCUSED & HONEST STACK)
+         ======================================================== -->
+    <section class="site-section tech-section" id="tech-stack">
+      <div class="container">
+        <div class="section-badge-wrap text-center" data-reveal="fade-up">
+          <span class="editorial-badge">02 // TECH STACK</span>
+        </div>
+
+        <div class="section-heading-box text-center" data-reveal="fade-up">
+          <h2 class="section-title">Teknologi yang Benar-Benar Digunakan</h2>
+          <p class="section-subtitle">
+            Hanya alat dan teknologi standar web yang saya pahami, kuasai, dan terapkan secara konsisten dalam proyek nyata.
+          </p>
+        </div>
+
+        <div class="tech-grid" data-reveal="fade-up">
+          <!-- Stack Item 1: HTML5 -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 3h16l-1.5 15.5L12 21l-6.5-2.5L4 3z"/>
+                <path d="M8 8h8M8 12h7M9 16l3 1 3-1"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">HTML5 Semantik</h3>
+                <span class="tech-badge">Fondasi</span>
+              </div>
+              <p class="tech-desc">
+                Menyusun dokumen web dengan tag semantik standar (<code class="inline-code">&lt;header&gt;</code>, <code class="inline-code">&lt;main&gt;</code>, <code class="inline-code">&lt;article&gt;</code>), ramah SEO, serta memenuhi standar aksesibilitas dasar.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stack Item 2: CSS3 -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 3h16l-1.5 15.5L12 21l-6.5-2.5L4 3z"/>
+                <path d="M16 8H8v4h7l-.5 4.5-2.5 1-2.5-1-.2-2"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">CSS3 &amp; Modern Layouts</h3>
+                <span class="tech-badge">Gaya &amp; Desain</span>
+              </div>
+              <p class="tech-desc">
+                Penguasaan mendalam CSS Flexbox, CSS Grid, Custom Properties (Variables), Fluid Typography, dan transisi halus tanpa ketergantungan library luar.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stack Item 3: Vanilla JavaScript -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="3"/>
+                <path d="M8 17c1.5 1 3 0 3-2v-4M15 17c2 0 3-1 3-3s-1-2-2-2-2 0-2-1 1-1 2-1"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">Vanilla JavaScript</h3>
+                <span class="tech-badge">Interaktivitas</span>
+              </div>
+              <p class="tech-desc">
+                Manipulasi DOM, penanganan event, filter dinamis, modal interaktif, validasi formulir, dan konsumsi Web API modern tanpa framework berat.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stack Item 4: Responsive Design -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">Responsive Web Design</h3>
+                <span class="tech-badge">Mobile First</span>
+              </div>
+              <p class="tech-desc">
+                Perancangan tata letak fleksibel menggunakan media queries cerdas dan viewport units, menjamin tampilan sempurna di laptop, tablet, dan smartphone.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stack Item 5: Git & GitHub -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="18" r="3"/>
+                <circle cx="6" cy="6" r="3"/>
+                <circle cx="18" cy="6" r="3"/>
+                <path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9M12 12v3"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">Git &amp; Version Control</h3>
+                <span class="tech-badge">Alur Kerja</span>
+              </div>
+              <p class="tech-desc">
+                Pelacakan perubahan kode, branching, commit history yang rapi dan terorganisir untuk menjaga integritas proyek website Anda.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stack Item 6: DevTools & Performance -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">Web Performance Audit</h3>
+                <span class="tech-badge">Optimasi</span>
+              </div>
+              <p class="tech-desc">
+                Analisis waktu pemuatan, pemangkasan CSS yang tidak terpakai, dan optimasi aset visual menggunakan Chrome DevTools dan Lighthouse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         5. SELECTED PROJECTS SECTION
+         ======================================================== -->
+    <section class="site-section projects-section" id="projects">
+      <div class="container">
+        <div class="section-badge-wrap" data-reveal="fade-up">
+          <span class="editorial-badge">03 // SELECTED PROJECTS</span>
+        </div>
+
+        <div class="section-heading-box" data-reveal="fade-up">
+          <h2 class="section-title">Showcase Proyek Website</h2>
+          <p class="section-subtitle">
+            Karya dan eksplorasi nyata yang dirancang dengan kode murni untuk menguji tata letak responsif dan interaktivitas JavaScript.
+          </p>
+        </div>
+
+        <!-- Featured Project 1: Valldiii Coffee Shop (Real Local Project) -->
+        <article class="featured-project-card" data-reveal="fade-up" id="project-coffee">
+          <div class="project-card-grid">
+            <!-- Left: High-Fidelity Browser Frame Preview with Live Toggle -->
+            <div class="project-mockup-wrapper">
+              <div class="project-browser-window">
+                <div class="browser-window-header">
+                  <div class="browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="browser-address">
+                    <span class="addr-lock">🔒</span> projects/coffee-shop/index.html
+                  </div>
+                  <div class="browser-tag-status">Live Local</div>
+                </div>
+
+                <!-- Preview Canvas / Interactive Frame -->
+                <div class="browser-preview-viewport">
+                  <!-- Real Interactive Embed of the Local Coffee Shop Project -->
+                  <iframe 
+                    src="projects/coffee-shop/index.html" 
+                    title="Pratinjau Interaktif Valldiii Coffee Shop" 
+                    class="coffee-shop-iframe" 
+                    loading="lazy">
+                  </iframe>
+
+                  <!-- Floating Hover Overlay Button for Direct Action -->
+                  <div class="preview-direct-overlay">
+                    <a href="projects/coffee-shop/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Buka proyek Coffee Shop di tab baru">
+                      <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+                      </svg>
+                      <span>Buka Halaman Penuh</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Project Description & Technical Highlights -->
+            <div class="project-info-wrapper">
+              <div class="project-status-row">
+                <span class="project-flag">PROYEK RIIL LOKAL</span>
+                <span class="project-year">2026</span>
+              </div>
+
+              <h3 class="project-title">Valldiii Coffee Shop</h3>
+
+              <p class="project-description">
+                Website demo kedai kopi berkonsep modern dan hangat. Menampilkan navigasi responsif, banner promosi artisan roast, katalog menu interaktif dengan filter kategori instan (Kopi &amp; Non-Kopi), cerita kedai, serta alur pemesanan cepat.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feature-bullet">
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Filter Kategori Menu:</strong> Interaktivitas Vanilla JavaScript murni tanpa refresh halaman.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-check">✓</span>
+                  <span><strong>CSS Grid Adaptif:</strong> Kartu menu tertata rapi dan secara otomatis menyesuaikan ukuran layar.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Desain Hangat &amp; Menggugah:</strong> Palet warna kopi bernuansa artisan dan tipografi tegas.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5 Semantik</span>
+                <span class="tech-tag">CSS3 Custom</span>
+                <span class="tech-tag">Vanilla JavaScript</span>
+                <span class="tech-tag">CSS Grid</span>
+              </div>
+
+              <div class="project-actions-group">
+                <a href="projects/coffee-shop/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-open-coffee">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+                  </svg>
+                  <span>Buka Live Demo</span>
+                </a>
+                <button type="button" class="btn btn-secondary" data-action="view-details" data-project="coffee" id="btn-coffee-details">
+                  <span>Rincian Arsitektur</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Secondary Projects Row: Practice Studies & Architectural Exploration -->
+        <div class="secondary-projects-grid">
+          <!-- Project 2: Creative Studio Landing Page Study -->
+          <article class="secondary-project-card" data-reveal="fade-up" id="project-agency">
+            <div class="card-browser-mockup">
+              <div class="mockup-top-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-slug">landing-page-concept.local</div>
+                <span class="mockup-tag">Konsep Latihan</span>
+              </div>
+              <div class="mockup-screen-content agency-visual">
+                <div class="mini-hero-badge">One-Page Strategy</div>
+                <h4>High-Impact Creative Studio</h4>
+                <p>Tata letak fokus konversi dengan Call-to-Action tegas.</p>
+                <div class="mini-metrics-strip">
+                  <span>⚡ 99+ Lighthouse</span>
+                  <span>📱 Fluid Breakpoint</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="secondary-card-body">
+              <div class="sec-meta-row">
+                <span class="sec-badge">STUDI TATA LETAK</span>
+                <span class="sec-time">One-Page</span>
+              </div>
+              <h3 class="sec-title">Landing Page Jasa Kreatif</h3>
+              <p class="sec-desc">
+                Eksplorasi pembuatan landing page satu halaman berorientasi konversi. Memiliki susunan informasi padat, hierarki visual jelas, dan waktu muat instan tanpa library CSS eksternal.
+              </p>
+              <div class="sec-tech-row">
+                <span class="tech-tag-sm">HTML5 Semantik</span>
+                <span class="tech-tag-sm">CSS Flexbox</span>
+                <span class="tech-tag-sm">Responsive</span>
+              </div>
+              <div class="sec-action-row">
+                <button type="button" class="btn btn-outline btn-sm" data-action="view-details" data-project="agency" id="btn-agency-details">
+                  <span>Lihat Rincian Teknis</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Simple Business Website Study -->
+          <article class="secondary-project-card" data-reveal="fade-up" id="project-business">
+            <div class="card-browser-mockup">
+              <div class="mockup-top-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-slug">umkm-profile-concept.local</div>
+                <span class="mockup-tag">Konsep Latihan</span>
+              </div>
+              <div class="mockup-screen-content business-visual">
+                <div class="mini-hero-badge">Local Business</div>
+                <h4>Profil Bisnis &amp; Etalase UMKM</h4>
+                <p>Menampilkan katalog produk, jam buka, dan chat WhatsApp.</p>
+                <div class="mini-metrics-strip">
+                  <span>💬 Direct WhatsApp</span>
+                  <span>🏪 Mudah Dikelola</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="secondary-card-body">
+              <div class="sec-meta-row">
+                <span class="sec-badge">STUDI TATA LETAK</span>
+                <span class="sec-time">Company Profile</span>
+              </div>
+              <h3 class="sec-title">Simple Business Website (UMKM)</h3>
+              <p class="sec-desc">
+                Rancangan konsep website profil bisnis lokal untuk memajang katalog produk ringkas, informasi lokasi usaha, jam operasional, dan integrasi tombol pesan instan WhatsApp.
+              </p>
+              <div class="sec-tech-row">
+                <span class="tech-tag-sm">HTML5 Semantik</span>
+                <span class="tech-tag-sm">CSS Grid</span>
+                <span class="tech-tag-sm">WhatsApp API</span>
+              </div>
+              <div class="sec-action-row">
+                <button type="button" class="btn btn-outline btn-sm" data-action="view-details" data-project="business" id="btn-business-details">
+                  <span>Lihat Rincian Teknis</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         6. SERVICES SECTION (3 CORE SERVICES)
+         ======================================================== -->
+    <section class="site-section services-section" id="services">
+      <div class="container">
+        <div class="section-badge-wrap text-center" data-reveal="fade-up">
+          <span class="editorial-badge">04 // SERVICES</span>
+        </div>
+
+        <div class="section-heading-box text-center" data-reveal="fade-up">
+          <h2 class="section-title">Layanan Pembuatan Website</h2>
+          <p class="section-subtitle">
+            Layanan terfokus yang saya tangani secara teliti, jujur, dan bertanggung jawab sesuai kapasitas teknis nyata.
+          </p>
+        </div>
+
+        <div class="services-cards-grid">
+          <!-- Service 1: Landing Page -->
+          <div class="service-editorial-card" data-reveal="fade-up">
+            <div class="service-card-number">01</div>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <h3 class="service-heading">Landing Page</h3>
+            <p class="service-paragraph">
+              Website satu halaman (one-page) terarah untuk mempromosikan produk tunggal, layanan baru, atau kampanye promosi dengan susunan Call-to-Action (CTA) yang jelas.
+            </p>
+
+            <div class="service-features-block">
+              <span class="features-label">Deliverables &amp; Fitur:</span>
+              <ul class="service-deliverables">
+                <li>Struktur halaman fokus konversi dan navigasi mulus</li>
+                <li>Tampilan 100% responsif di smartphone dan laptop</li>
+                <li>Waktu pemuatan halaman sangat cepat tanpa beban berat</li>
+                <li>Integrasi tombol Call-to-Action ke WhatsApp atau Email</li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/6281210119304?text=Halo%20Valldiii%2C%20saya%20tertarik%20untuk%20berdiskusi%20tentang%20pembuatan%20Landing%20Page" target="_blank" rel="noopener noreferrer" class="btn btn-service-cta" aria-label="Konsultasi jasa Landing Page via WhatsApp">
+              <span>Konsultasi Landing Page</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 2: Personal Portfolio -->
+          <div class="service-editorial-card" data-reveal="fade-up">
+            <div class="service-card-number">02</div>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3 class="service-heading">Personal Portfolio</h3>
+            <p class="service-paragraph">
+              Website portofolio profesional untuk kreator, freelancer, atau profesional yang ingin memamerkan karya terbaik, riwayat, dan keahlian secara elegan di internet.
+            </p>
+
+            <div class="service-features-block">
+              <span class="features-label">Deliverables &amp; Fitur:</span>
+              <ul class="service-deliverables">
+                <li>Desain personal berkarakter modern dan berkelas</li>
+                <li>Showcase kartu proyek interaktif dengan link live demo</li>
+                <li>Rincian keahlian teknis dan riwayat secara terstruktur</li>
+                <li>Saluran kontak terpadu (WhatsApp, Email, Media Sosial)</li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/6281210119304?text=Halo%20Valldiii%2C%20saya%20tertarik%20untuk%20berdiskusi%20tentang%20pembuatan%20Personal%20Portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-service-cta" aria-label="Konsultasi jasa Personal Portfolio via WhatsApp">
+              <span>Konsultasi Portfolio</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 3: Simple Business Website -->
+          <div class="service-editorial-card" data-reveal="fade-up">
+            <div class="service-card-number">03</div>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="service-heading">Simple Business Website</h3>
+            <p class="service-paragraph">
+              Website profil usaha untuk memperkuat kehadiran online bisnis lokal atau UMKM, memajang katalog produk atau menu, informasi jam buka, serta lokasi usaha.
+            </p>
+
+            <div class="service-features-block">
+              <span class="features-label">Deliverables &amp; Fitur:</span>
+              <ul class="service-deliverables">
+                <li>Penyajian informasi profil usaha yang rapi dan kredibel</li>
+                <li>Etalase menu atau katalog produk ringkas dengan label harga</li>
+                <li>Tombol pemesanan atau konsultasi langsung ke WhatsApp bisnis</li>
+                <li>Struktur ringan yang mudah dimuat oleh pelanggan lokal</li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/6281210119304?text=Halo%20Valldiii%2C%20saya%20tertarik%20untuk%20berdiskusi%20tentang%20pembuatan%20Simple%20Business%20Website" target="_blank" rel="noopener noreferrer" class="btn btn-service-cta" aria-label="Konsultasi jasa Simple Business Website via WhatsApp">
+              <span>Konsultasi Website Bisnis</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         7. CONTACT SECTION (ACCURATE & VERIFIED CONTACTS)
+         ======================================================== -->
+    <section class="site-section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-editorial-frame" data-reveal="fade-up">
+          <div class="contact-header-content">
+            <span class="editorial-badge">05 // GET IN TOUCH</span>
+            <h2 class="contact-main-heading">Mari Memulai Sesuatu yang Berarti Bersama.</h2>
+            <p class="contact-lead-text">
+              Punya ide website, ingin membuat landing page untuk produk Anda, atau membutuhkan website portofolio profesional? Silakan hubungi saya melalui WhatsApp atau Email resmi berikut.
+            </p>
+          </div>
+
+          <!-- Dual Contact Cards Grid -->
+          <div class="contact-cards-grid">
+            <!-- Channel 1: WhatsApp Official -->
+            <div class="contact-card card-whatsapp">
+              <div class="contact-card-top">
+                <div class="contact-icon-wrapper wa-icon">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.49 0-2.95-.4-4.23-1.16l-.3-.18-3.14.82.84-3.06-.2-.31c-.83-1.33-1.27-2.87-1.27-4.46 0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4 1.55 1.55 2.4 3.61 2.4 5.8 0 4.52-3.68 8.19-8.2 8.19zm4.49-6.14c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+                  </svg>
+                </div>
+                <span class="channel-badge">Respon Tercepat</span>
+              </div>
+
+              <div class="contact-card-info">
+                <span class="channel-label">WHATSAPP RESMI</span>
+                <span class="channel-main-value" id="text-whatsapp-display">081210119304</span>
+                <p class="channel-subtext">Langsung terhubung ke chat WhatsApp pribadi saya.</p>
+              </div>
+
+              <div class="contact-card-actions">
+                <a href="https://wa.me/6281210119304" target="_blank" rel="noopener noreferrer" class="btn btn-wa-direct" id="btn-whatsapp-me" aria-label="Buka obrolan WhatsApp">
+                  <span>Chat di WhatsApp</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                </a>
+                <button type="button" class="btn btn-copy" data-copy-target="081210119304" data-copy-type="Nomor WhatsApp" aria-label="Salin nomor WhatsApp">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                  </svg>
+                  <span>Salin Nomor</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Channel 2: Email Official -->
+            <div class="contact-card card-email">
+              <div class="contact-card-top">
+                <div class="contact-icon-wrapper email-icon">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <span class="channel-badge">Diskusi Formal</span>
+              </div>
+
+              <div class="contact-card-info">
+                <span class="channel-label">EMAIL RESMI</span>
+                <span class="channel-main-value" id="text-email-display">aftaasifaasifa33083@gmail.com</span>
+                <p class="channel-subtext">Cocok untuk pengiriman berkas atau proposal proyek terperinci.</p>
+              </div>
+
+              <div class="contact-card-actions">
+                <a href="mailto:aftaasifaasifa33083@gmail.com?subject=Diskusi%20Proyek%20Website%20-%20Valldiii" class="btn btn-email-direct" id="btn-email-me" aria-label="Kirim Email ke Valldiii">
+                  <span>Kirim Email</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                </a>
+                <button type="button" class="btn btn-copy" data-copy-target="aftaasifaasifa33083@gmail.com" data-copy-type="Alamat Email" aria-label="Salin alamat email">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                  </svg>
+                  <span>Salin Email</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       8. FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content-wrap">
+      <div class="footer-top-row">
+        <div class="footer-brand-box">
+          <a href="#home" class="brand-logo footer-logo">
+            <span class="logo-text">VALLDIII</span>
+            <span class="logo-dot">.</span>
+          </a>
+          <p class="footer-mission">
+            Freelance Web Developer &amp; Mahasiswa Teknik Informatika. Mendedikasikan diri untuk kode yang bersih, efisien, dan berorientasi pada kepuasan pengguna.
+          </p>
+        </div>
+
+        <nav class="footer-nav-menu" aria-label="Navigasi Halaman Footer">
+          <span class="footer-col-title">Navigasi Cepat</span>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact-box">
+          <span class="footer-col-title">Hubungi Langsung</span>
+          <p class="footer-contact-item">
+            <strong>WA:</strong> <a href="https://wa.me/6281210119304" target="_blank" rel="noopener noreferrer">081210119304</a>
+          </p>
+          <p class="footer-contact-item">
+            <strong>Email:</strong> <a href="mailto:aftaasifaasifa33083@gmail.com">aftaasifaasifa33083@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-divider-line"></div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-info">
+          &copy; <span id="current-year">2026</span> <strong>VALLDIII</strong>. All rights reserved.
+        </p>
+        <p class="built-with-note">
+          Dibangun dengan HTML5 Semantik, CSS3 Modern, dan Vanilla JavaScript murni.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       9. BACK TO TOP BUTTON
+       ======================================================== -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Kembali ke atas halaman">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- ========================================================
+       10. PROJECT DETAIL MODAL DIALOG
+       ======================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" hidden>
+    <div class="modal-dialog-box">
+      <div class="modal-head">
+        <span class="modal-type-tag" id="modal-category">Rincian Teknis</span>
+        <button type="button" class="modal-close-btn" id="modal-close" aria-label="Tutup jendela rincian proyek">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body-content">
+        <h3 class="modal-title" id="modal-project-title">Judul Proyek</h3>
+        <p class="modal-description" id="modal-project-desc">Deskripsi arsitektur dan tujuan pengembangan proyek.</p>
+
+        <div class="modal-section-block">
+          <h4 class="modal-block-heading">Fitur &amp; Implementasi Utama:</h4>
+          <ul class="modal-bullets-list" id="modal-features-list">
+            <!-- Diisi secara dinamis oleh JavaScript -->
+          </ul>
+        </div>
+
+        <div class="modal-section-block">
+          <h4 class="modal-block-heading">Teknologi yang Digunakan:</h4>
+          <div class="modal-tech-pills" id="modal-tech-stack">
+            <!-- Diisi secara dinamis oleh JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-foot-actions">
+        <button type="button" class="btn btn-secondary btn-sm" id="modal-btn-dismiss">Tutup</button>
+        <a href="#" class="btn btn-primary btn-sm" id="modal-btn-action" target="_blank" rel="noopener noreferrer">Buka Proyek</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-hub" id="toast-hub" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js?v=3.0"></script>
+</body>
+</html>
