@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valldiii Coffee Shop Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header & Nav -->
+  <header class="header">
+    <div class="container nav-wrap">
+      <div class="brand">☕ Valldiii Coffee</div>
+      <nav class="nav-links">
+        <a href="#hero">Beranda</a>
+        <a href="#menu">Daftar Menu</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#order" class="btn-order-nav">Pesan Sekarang</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <span class="badge">Artisan Local Roast</span>
+      <h1>Secangkir Rasa Hangat Untuk Setiap Cerita Anda</h1>
+      <p>Biji kopi pilihan Nusantara yang disangrai dengan presisi untuk menemani setiap ide dan aktivitas harian Anda.
+      </p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">Lihat Menu</a>
+        <a href="#order" class="btn-secondary">Pesan Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="sec-title text-center">
+        <h2>Daftar Menu Favorit</h2>
+        <p>Diracik oleh barista dengan bahan berkualitas tinggi</p>
+      </div>
+
+      <div class="menu-filter text-center">
+        <button class="filter-btn active" data-category="all">Semua</button>
+        <button class="filter-btn" data-category="coffee">Kopi</button>
+        <button class="filter-btn" data-category="non-coffee">Non-Kopi</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-info">
+            <h3>Espresso Blend Valldiii</h3>
+            <p>Ekstraksi murni dengan notes cokelat hitam dan rempah halus.</p>
+          </div>
+          <span class="price">Rp 22.000</span>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-info">
+            <h3>Creamy Aren Latte</h3>
+            <p>Espresso lembut dipadu susu murni dan gula aren organik.</p>
+          </div>
+          <span class="price">Rp 28.000</span>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-info">
+            <h3>Cold Brew Citrus</h3>
+            <p>Kopi seduh dingin selama 16 jam dengan sensasi segar jeruk lokal.</p>
+          </div>
+          <span class="price">Rp 30.000</span>
+        </div>
+
+        <div class="menu-item" data-category="non-coffee">
+          <div class="menu-info">
+            <h3>Matcha Oat Latte</h3>
+            <p>Uji matcha asli Jepang dipadukan dengan creamy oat milk.</p>
+          </div>
+          <span class="price">Rp 32.000</span>
+        </div>
+
+        <div class="menu-item" data-category="non-coffee">
+          <div class="menu-info">
+            <h3>Signature Chocolate</h3>
+            <p>Cokelat pekat Jawa Timur dengan foam susu lembut.</p>
+          </div>
+          <span class="price">Rp 28.000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container about-wrap">
+      <div class="about-card">
+        <h2>Tentang Kedai Kopi Kami</h2>
+        <p>Valldiii Coffee berawal dari apresiasi mendalam terhadap para petani kopi lokal Indonesia. Kami berkomitmen
+          menyajikan seduhan kopi yang konsisten dalam suasana ruang yang tenang, ramah, dan nyaman untuk bekerja maupun
+          bersantai.</p>
+        <div class="about-stats">
+          <div>
+            <strong>100%</strong>
+            <span>Biji Kopi Lokal</span>
+          </div>
+          <div>
+            <strong>Fresh</strong>
+            <span>Roasting Mingguan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Section -->
+  <section class="order-section" id="order">
+    <div class="container text-center">
+      <h2>Pesan Meja atau Kopi Favorit Anda</h2>
+      <p>Kunjungi kedai kami atau lakukan pemesanan cepat untuk dibawa pulang.</p>
+      <button type="button" class="btn-primary btn-large" id="btn-order-demo">Pesan via Kasir / WhatsApp</button>
+      <div id="order-msg" class="order-alert" style="display: none;"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Valldiii Coffee Shop Demo. Portofolio Latihan oleh Valldiii.</p>
+      <p><a href="../../index.html" class="back-link">← Kembali ke Halaman Portofolio Valldiii</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

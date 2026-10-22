@@ -1,0 +1,281 @@
+/* Valldiii Coffee Shop Demo Stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #17120E;
+  color: #F5EBE1;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  background-color: rgba(23, 18, 14, 0.95);
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(245, 235, 225, 0.1);
+  padding: 1.2rem 0;
+  z-index: 100;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #E2A156;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a:hover {
+  color: #E2A156;
+}
+
+.btn-order-nav {
+  background-color: #E2A156;
+  color: #17120E !important;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+}
+
+.hero {
+  padding: 5rem 0;
+  text-align: center;
+  background: radial-gradient(circle, rgba(226, 161, 86, 0.12) 0%, rgba(23, 18, 14, 0) 70%);
+}
+
+.badge {
+  display: inline-block;
+  background-color: rgba(226, 161, 86, 0.15);
+  color: #E2A156;
+  padding: 0.3rem 0.8rem;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.hero p {
+  color: #C7B7A6;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #E2A156;
+  color: #17120E;
+  font-weight: 700;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #D28F42;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(245, 235, 225, 0.2);
+  color: #F5EBE1;
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+}
+
+.btn-large {
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+}
+
+.menu-section, .about-section, .order-section {
+  padding: 4.5rem 0;
+}
+
+.sec-title h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sec-title p {
+  color: #C7B7A6;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.menu-filter {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid rgba(245, 235, 225, 0.2);
+  color: #C7B7A6;
+  padding: 0.4rem 1.2rem;
+  border-radius: 99px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background-color: #E2A156;
+  color: #17120E;
+  border-color: #E2A156;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-item {
+  background-color: #211B15;
+  border: 1px solid rgba(245, 235, 225, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menu-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+  color: #F5EBE1;
+}
+
+.menu-info p {
+  font-size: 0.85rem;
+  color: #A99988;
+}
+
+.price {
+  font-weight: 700;
+  color: #E2A156;
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+
+.about-card {
+  background-color: #211B15;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  border: 1px solid rgba(245, 235, 225, 0.08);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-card h2 {
+  margin-bottom: 1rem;
+  color: #E2A156;
+}
+
+.about-card p {
+  color: #C7B7A6;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.about-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.about-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-stats strong {
+  font-size: 1.8rem;
+  color: #E2A156;
+}
+
+.about-stats span {
+  font-size: 0.85rem;
+  color: #A99988;
+}
+
+.order-section {
+  background-color: #1B140F;
+}
+
+.order-alert {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(226, 161, 86, 0.15);
+  border: 1px solid #E2A156;
+  border-radius: 8px;
+  color: #F5EBE1;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(245, 235, 225, 0.08);
+  color: #A99988;
+  font-size: 0.85rem;
+}
+
+.back-link {
+  color: #E2A156;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+}
