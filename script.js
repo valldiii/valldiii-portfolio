@@ -57,6 +57,25 @@ document.addEventListener('DOMContentLoaded', () => {
       actionText: 'Buka Live Demo'
     },
 
+    nusarasa: {
+      category: 'Proyek Riil UMKM',
+      title: 'NUSA RASA – Catering & Food Service',
+      description: 'Website company profile komersial untuk usaha catering dan kuliner Nusantara. Dibuat dengan kode murni untuk memberikan pengalaman pemesanan yang cepat bagi calon klien melalui katalog menu responsif, komparasi paket prasmanan, galeri hidangan beresolusi tinggi, serta formulir pemesanan otomatis terintegrasi ke WhatsApp.',
+      features: [
+        'Desain visual hangat & profesional khas Nusantara dengan palet warna cream, hijau tua, dan oranye lembut',
+        'Filter kategori menu instan (Nasi Kotak, Prasmanan, Tumpeng Syukuran) tanpa reload halaman',
+        'Sistem reservasi dan pemesanan interaktif dengan generator format pesan otomatis ke WhatsApp API',
+        'Komparasi paket catering transparan lengkap dengan daftar fasilitas dan menu pendamping',
+        'Galeri estetis hidangan dan tata saji meja buffet prasmanan pernikahan/kantor',
+        'Tata letak 100% responsif untuk smartphone, tablet, laptop, hingga layar monitor lebar'
+      ],
+      techStack: ['HTML5 Semantik', 'CSS3 Modern (Cream & Green)', 'Vanilla JavaScript', 'WhatsApp Business API', 'Responsive Layout'],
+      sourceInfo: 'Kode sumber lengkap demo NUSA RASA tersedia di direktori lokal "projects/nusa-rasa/" (index.html, style.css, script.js). Repositori GitHub resmi: https://github.com/valldiii/valldiii-portfolio',
+      githubUrl: 'https://github.com/valldiii/valldiii-portfolio',
+      actionUrl: 'projects/nusa-rasa/index.html',
+      actionText: 'Buka Live Demo'
+    },
+
     agency: {
       category: 'Studi Konsep Landing Page',
       title: 'Landing Page Jasa Kreatif',
