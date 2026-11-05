@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Struktur semantik HTML5 yang siap untuk pengindeksan mesin pencari'
       ],
       techStack: ['HTML5 Semantik', 'CSS3 Modern', 'Vanilla JavaScript', 'CSS Grid', 'Responsive Design'],
+      sourceInfo: 'Kode sumber lengkap demo Coffee Shop tersedia di direktori lokal "projects/coffee-shop/" (index.html, style.css, script.js). Repositori GitHub resmi: https://github.com/valldiii/valldiii-portfolio',
+      githubUrl: 'https://github.com/valldiii/valldiii-portfolio',
       actionUrl: 'projects/coffee-shop/index.html',
       actionText: 'Buka Live Demo'
     },
@@ -67,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Integrasi tombol Call-to-Action terarah untuk konsultasi instan'
       ],
       techStack: ['HTML5 Semantik', 'CSS Flexbox', 'Mobile-First', 'Performance Audit'],
+      sourceInfo: 'Studi tata letak dan eksplorasi antarmuka front-end murni untuk memaksimalkan rasio konversi.',
+      githubUrl: null,
       actionUrl: '#contact',
       actionText: 'Konsultasi Konsep Serupa'
     },
@@ -82,6 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Ukuran aset sangat ringan sehingga mudah dibuka pelanggan dengan koneksi terbatas'
       ],
       techStack: ['HTML5 Semantik', 'CSS Grid', 'Vanilla JavaScript', 'WhatsApp API'],
+      sourceInfo: 'Studi rancangan profil bisnis UMKM dan etalase produk terintegrasi langsung ke WhatsApp bisnis.',
+      githubUrl: null,
       actionUrl: '#contact',
       actionText: 'Konsultasi Konsep Serupa'
     }
@@ -229,7 +235,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ======================================================
-   * 7. PROJECT DETAILS MODAL
+   * 6.1 HERO MOCKUP INTERACTION (OPENS COFFEE SHOP DEMO)
+   * ====================================================== */
+  const heroMockupCard = document.querySelector('.hero-col-mockup .mockup-frame-card');
+  if (heroMockupCard) {
+    heroMockupCard.style.cursor = 'pointer';
+    heroMockupCard.setAttribute('title', 'Klik untuk membuka demo Valldiii Coffee Shop di tab baru');
+    heroMockupCard.addEventListener('click', (e) => {
+      // Don't duplicate action if clicking direct anchor inside
+      if (e.target.closest('a')) return;
+      window.open('projects/coffee-shop/index.html', '_blank', 'noopener,noreferrer');
+    });
+  }
+
+  /* ======================================================
+   * 7. PROJECT DETAILS MODAL & SOURCE CODE HANDLER
    * ====================================================== */
   const modal = document.getElementById('project-modal');
   const modalCategory = document.getElementById('modal-category');
@@ -237,6 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalDesc = document.getElementById('modal-project-desc');
   const modalFeatures = document.getElementById('modal-features-list');
   const modalTech = document.getElementById('modal-tech-stack');
+  const modalSourceNote = document.getElementById('modal-source-note');
   const modalClose = document.getElementById('modal-close');
   const modalDismiss = document.getElementById('modal-btn-dismiss');
   const modalAction = document.getElementById('modal-btn-action');
@@ -248,6 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalCategory) modalCategory.textContent = data.category;
     if (modalTitle) modalTitle.textContent = data.title;
     if (modalDesc) modalDesc.textContent = data.description;
+    if (modalSourceNote) modalSourceNote.textContent = data.sourceInfo || 'Tersedia di direktori proyek lokal.';
 
     if (modalFeatures) {
       modalFeatures.innerHTML = '';
@@ -298,8 +320,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Source code button handler (verifies GitHub repo or provides local path information)
+  document.querySelectorAll('[data-action="view-source"]').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const projectId = button.getAttribute('data-project');
+      const data = PROJECTS_DATA[projectId];
+      if (data && data.githubUrl) {
+        window.open(data.githubUrl, '_blank', 'noopener,noreferrer');
+      } else {
+        const infoMsg = (data && data.sourceInfo)
+          ? data.sourceInfo
+          : 'Kode sumber proyek ini tersimpan secara lokal dan belum dipublikasikan di GitHub.';
+        showToast(infoMsg);
+      }
+    });
+  });
+
   if (modalClose) modalClose.addEventListener('click', closeProjectModal);
   if (modalDismiss) modalDismiss.addEventListener('click', closeProjectModal);
+
+  // Close modal when an in-page anchor like #contact is clicked inside modalAction
+  if (modalAction) {
+    modalAction.addEventListener('click', () => {
+      const href = modalAction.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        closeProjectModal();
+      }
+    });
+  }
 
   if (modal) {
     modal.addEventListener('click', (e) => {

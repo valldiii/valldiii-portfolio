@@ -130,9 +130,9 @@
                 <span class="ctrl-dot dot-minimize"></span>
                 <span class="ctrl-dot dot-maximize"></span>
               </div>
-              <div class="window-address-tab">
-                <span class="addr-protocol">https://</span>valldiii.dev/portfolio/preview
-              </div>
+              <a href="projects/coffee-shop/index.html" target="_blank" rel="noopener noreferrer" class="window-address-tab" title="Buka Live Demo Valldiii Coffee Shop di tab baru" aria-label="Buka Live Demo Valldiii Coffee Shop di tab baru">
+                <span class="addr-protocol">https://</span>valldiii.github.io/valldiii-portfolio/projects/coffee-shop/
+              </a>
               <div class="window-status-badge">
                 <span class="status-live-dot"></span> LIVE 200 OK
               </div>
@@ -146,7 +146,7 @@
               <!-- Top Micro Nav -->
               <div class="mock-browser-nav">
                 <div class="mock-nav-left">
-                  <span class="mock-brand-badge">VALLDIII.DEV</span>
+                  <span class="mock-brand-badge">VALLDIII.GITHUB.IO</span>
                   <span class="mock-nav-item active">Index.html</span>
                   <span class="mock-nav-item">Style.css</span>
                 </div>
@@ -543,6 +543,15 @@
                 <button type="button" class="btn btn-secondary" data-action="view-details" data-project="coffee" id="btn-coffee-details">
                   <span>Rincian Arsitektur</span>
                 </button>
+                <button type="button" class="btn btn-outline" data-action="view-source" data-project="coffee" id="btn-coffee-source" aria-label="Informasi Kode Sumber Coffee Shop">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="18" r="3"/>
+                    <circle cx="6" cy="6" r="3"/>
+                    <circle cx="18" cy="6" r="3"/>
+                    <path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9M12 12v3"/>
+                  </svg>
+                  <span>Source Code</span>
+                </button>
               </div>
             </div>
           </div>
@@ -587,6 +596,9 @@
                 <button type="button" class="btn btn-outline btn-sm" data-action="view-details" data-project="agency" id="btn-agency-details">
                   <span>Lihat Rincian Teknis</span>
                 </button>
+                <a href="#contact" class="btn btn-secondary btn-sm" id="btn-agency-consult">
+                  <span>Konsultasi Konsep</span>
+                </a>
               </div>
             </div>
           </article>
@@ -628,6 +640,9 @@
                 <button type="button" class="btn btn-outline btn-sm" data-action="view-details" data-project="business" id="btn-business-details">
                   <span>Lihat Rincian Teknis</span>
                 </button>
+                <a href="#contact" class="btn btn-secondary btn-sm" id="btn-business-consult">
+                  <span>Konsultasi Konsep</span>
+                </a>
               </div>
             </div>
           </article>
@@ -934,6 +949,11 @@
           <div class="modal-tech-pills" id="modal-tech-stack">
             <!-- Diisi secara dinamis oleh JavaScript -->
           </div>
+        </div>
+
+        <div class="modal-section-block" id="modal-source-block">
+          <h4 class="modal-block-heading">Status Kode Sumber:</h4>
+          <p class="modal-source-note" id="modal-source-note">Tersedia di folder proyek lokal.</p>
         </div>
       </div>
 

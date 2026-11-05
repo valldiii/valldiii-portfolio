@@ -650,12 +650,27 @@ button {
 
 .window-address-tab {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: var(--text-muted);
   background: rgba(255, 255, 255, 0.04);
   padding: 0.25rem 0.85rem;
   border-radius: var(--radius-xs);
   border: 1px solid rgba(255, 255, 255, 0.05);
+  display: inline-flex;
+  align-items: center;
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.window-address-tab:hover {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.35);
+  color: var(--text-white);
 }
 
 .addr-protocol {
@@ -1185,7 +1200,7 @@ button {
 .browser-preview-viewport {
   position: relative;
   flex: 1;
-  min-height: 320px;
+  min-height: 480px;
   background-color: #1a1512;
   overflow: hidden;
 }
@@ -1193,7 +1208,7 @@ button {
 .coffee-shop-iframe {
   width: 100%;
   height: 100%;
-  min-height: 360px;
+  min-height: 500px;
   border: none;
   display: block;
 }
@@ -1203,8 +1218,15 @@ button {
   bottom: 1rem;
   right: 1rem;
   z-index: 10;
-  opacity: 0.95;
+  opacity: 0;
+  pointer-events: none;
   transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.browser-preview-viewport:hover .preview-direct-overlay,
+.browser-preview-viewport:focus-within .preview-direct-overlay {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .preview-direct-overlay:hover {
@@ -1468,6 +1490,14 @@ button {
   border-radius: var(--radius-xs);
   background: rgba(255, 255, 255, 0.04);
   color: var(--text-muted);
+}
+
+.sec-action-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: auto;
 }
 
 /* --- 10. SERVICES SECTION (3 CORE SERVICES) --- */
@@ -2039,6 +2069,16 @@ button {
   gap: 0.45rem;
 }
 
+.modal-source-note {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+}
+
 .modal-foot-actions {
   display: flex;
   align-items: center;
@@ -2070,6 +2110,7 @@ button {
   border-radius: var(--radius-full);
   font-size: 0.88rem;
   font-weight: 600;
+  max-width: min(90vw, 520px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
@@ -2122,7 +2163,8 @@ button {
 
 [data-reveal].is-revealed {
   opacity: 1;
-  transform: translate(0, 0);
+  transform: none;
+  will-change: auto;
 }
 
 /* --- 17. RESPONSIVE MEDIA QUERIES --- */
@@ -2266,6 +2308,21 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .project-mockup-wrapper {
+    padding: 1.25rem;
+  }
+
+  .browser-address {
+    max-width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .coffee-shop-iframe {
+    min-height: 440px;
+  }
+
   .project-info-wrapper {
     padding: 1.75rem;
   }
@@ -2301,6 +2358,78 @@ button {
 
   .btn-nav-cta {
     display: none;
+  }
+
+  .window-address-tab {
+    max-width: 175px;
+    font-size: 0.68rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .preview-direct-overlay {
+    display: none !important;
+  }
+
+  .project-mockup-wrapper {
+    padding: 0.85rem;
+  }
+
+  .browser-address {
+    max-width: 135px;
+  }
+
+  .browser-tag-status {
+    font-size: 0.62rem;
+  }
+
+  .coffee-shop-iframe {
+    min-height: 400px;
+  }
+
+  .project-info-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  .project-actions-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-actions-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sec-action-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sec-action-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modal-dialog-box {
+    max-height: 90vh;
+  }
+
+  .modal-body-content {
+    padding: 1.25rem 1rem;
+    max-height: 58vh;
+  }
+
+  .modal-foot-actions {
+    flex-direction: column-reverse;
+  }
+
+  .modal-foot-actions .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .contact-card-actions {
