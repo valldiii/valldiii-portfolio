@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="vGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="60%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#0f1f44" />
+      <stop offset="100%" stop-color="#050814" />
+    </radialGradient>
+  </defs>
+  <!-- Background with subtle border -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bgGlow)" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.35"/>
+  <!-- Modern Geometric Letter V -->
+  <path d="M16 18 L26 43 L32 43 L42 18 L34.5 18 L29 34.5 L23.5 18 Z" fill="url(#vGrad)" />
+  <!-- Signature Brand Accent Dot -->
+  <circle cx="47" cy="42" r="3.2" fill="#00f2fe" />
+</svg>
+

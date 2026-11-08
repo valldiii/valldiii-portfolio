@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valldiii Coffee — Artisan Roast &amp; Specialty Coffee</title>
-  <meta name="description" content="Demo website kedai kopi modern Valldiii Coffee. Katalog menu interaktif, artisan roast biji Nusantara, dan pemesanan instan via WhatsApp.">
+  <meta name="description" content="Valldiii Coffee — Contemporary specialty coffee roastery demo website. Handcrafted single-origin roasts, signature beverage catalog, and direct-to-WhatsApp mobile ordering.">
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Google Fonts: Playfair Display (Editorial Serif) & Plus Jakarta Sans (Modern Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2.0">
 </head>
 
 <body>
@@ -22,24 +22,24 @@
        ======================================================== -->
   <header class="header" id="site-header">
     <div class="container nav-wrap">
-      <a href="#hero" class="brand" aria-label="Valldiii Coffee - Beranda">
+      <a href="#hero" class="brand" aria-label="Valldiii Coffee - Home">
         <span class="brand-icon">☕</span>
         <span class="brand-name">Valldiii<span class="brand-accent">.Coffee</span></span>
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="nav-links" id="nav-links" aria-label="Navigasi Menu Kedai">
-        <a href="#hero" class="nav-item active">Beranda</a>
-        <a href="#about" class="nav-item">Tentang</a>
-        <a href="#menu" class="nav-item">Menu Kopi</a>
-        <a href="#features" class="nav-item">Keunggulan</a>
-        <a href="#gallery" class="nav-item">Galeri</a>
-        <a href="#contact" class="nav-item">Kontak</a>
-        <a href="#menu" class="btn-order-nav">Pesan Sekarang</a>
+      <nav class="nav-links" id="nav-links" aria-label="Shop Navigation Menu">
+        <a href="#hero" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">Our Story</a>
+        <a href="#menu" class="nav-item">Coffee Menu</a>
+        <a href="#features" class="nav-item">Craft &amp; Quality</a>
+        <a href="#gallery" class="nav-item">Atmosphere</a>
+        <a href="#contact" class="nav-item">Visit Us</a>
+        <a href="#menu" class="btn-order-nav">Order Online</a>
       </nav>
 
       <!-- Mobile Hamburger Button -->
-      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav-links">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -57,27 +57,27 @@
         <div class="hero-content">
           <div class="hero-badge">
             <span class="badge-dot"></span>
-            <span>ARTISAN LOCAL ROAST • 100% BIJI NUSANTARA</span>
+            <span>ARTISAN MICRO-ROAST • 100% INDONESIAN ARABICA</span>
           </div>
 
           <h1 class="hero-title">
-            Secangkir Rasa Hangat <br>
-            <span class="text-gradient">Untuk Setiap Cerita</span> Anda.
+            Warm Roasted Craft <br>
+            <span class="text-gradient">For Every Meaningful</span> Chapter.
           </h1>
 
           <p class="hero-desc">
-            Biji kopi pilihan Nusantara yang disangrai segar setiap minggu dan diracik presisi oleh barista. Menemani setiap ide kreatif, obrolan bermakna, dan jeda istirahat harian Anda.
+            Handpicked single-origin Indonesian beans roasted in small weekly batches and extracted with calibrated precision. Designed to fuel your creative flow, memorable conversations, and daily peaceful pauses.
           </p>
 
           <div class="hero-actions">
             <a href="#menu" class="btn btn-primary" id="hero-btn-menu">
-              <span>Lihat Menu Lengkap</span>
+              <span>Explore Our Menu</span>
               <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
                 <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
               </svg>
             </a>
             <a href="#about" class="btn btn-secondary" id="hero-btn-story">
-              <span>Cerita Kami</span>
+              <span>Our Story</span>
             </a>
           </div>
 
@@ -85,12 +85,12 @@
           <div class="hero-stats-strip">
             <div class="stat-pill">
               <strong>100%</strong>
-              <span>Arabika Lokal</span>
+              <span>Single-Origin</span>
             </div>
             <div class="stat-separator" aria-hidden="true"></div>
             <div class="stat-pill">
-              <strong>Fresh</strong>
-              <span>Weekly Roast</span>
+              <strong>Weekly</strong>
+              <span>Fresh Roast</span>
             </div>
             <div class="stat-separator" aria-hidden="true"></div>
             <div class="stat-pill">
@@ -102,10 +102,10 @@
 
         <div class="hero-visual">
           <div class="hero-image-card">
-            <img src="images/hero_coffee.jpg" alt="Secangkir kopi espresso hangat dengan latte art indah di meja kayu" class="hero-img" loading="eager">
+            <img src="images/hero_coffee.jpg" alt="Warm espresso cup with delicate latte art on wooden table" class="hero-img" loading="eager">
             <div class="hero-card-tag">
               <span class="tag-title">Signature Blend</span>
-              <span class="tag-sub">Aroma Cokelat &amp; Rempah</span>
+              <span class="tag-sub">Dark Cacao &amp; Wild Spice Notes</span>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@
       <div class="container">
         <div class="about-grid">
           <div class="about-image-wrap">
-            <img src="images/gallery_1.jpg" alt="Suasana hangat interior kedai kopi Valldiii" class="about-img" loading="lazy">
+            <img src="images/gallery_1.jpg" alt="Warm cozy interior atmosphere of Valldiii Coffee bar" class="about-img" loading="lazy">
             <div class="about-experience-badge">
               <span class="exp-number">Artisan</span>
               <span class="exp-label">Coffee Experience</span>
@@ -127,28 +127,28 @@
           </div>
 
           <div class="about-text-wrap">
-            <span class="section-tag">TENTANG KEDAI</span>
-            <h2 class="section-title">Dedikasi Pada Keaslian Biji Kopi Nusantara</h2>
+            <span class="section-tag">OUR HERITAGE</span>
+            <h2 class="section-title">Rooted in Passion for Authentic Indonesian Coffee</h2>
             <p class="about-paragraph">
-              Valldiii Coffee berawal dari apresiasi mendalam terhadap para petani kopi lokal Indonesia. Kami berkomitmen menyajikan seduhan kopi yang konsisten dalam suasana ruang yang ramah, hangat, dan nyaman untuk bekerja maupun berbincang santai.
+              Valldiii Coffee was born from a deep reverence for Indonesian coffee farmers across Java, Sumatra, and Bali. We are committed to crafting consistently balanced brews inside a calm, warm, and inviting space tailored for focused work and unhurried conversation.
             </p>
             <p class="about-paragraph">
-              Setiap cangkir yang kami sajikan melalui proses kurasi ketat: pemilihan biji kopi berkualitas, profil pemanggangan presisi, dan teknik penyeduhan manual maupun espresso yang terstandarisasi.
+              Every pour follows a rigorous standard: meticulous bean selection, customized weekly roast profiles, and calibrated manual pour-over and espresso extractions.
             </p>
 
             <div class="about-features-row">
               <div class="about-feat-item">
                 <span class="feat-icon">🌾</span>
                 <div>
-                  <h4>Biji Kopi Terpilih</h4>
-                  <p>Langsung dari petani Jawa, Sumatra, dan Bali.</p>
+                  <h4>Ethically Sourced</h4>
+                  <p>Direct partnerships with independent Highland coffee farmers.</p>
                 </div>
               </div>
               <div class="about-feat-item">
                 <span class="feat-icon">🔥</span>
                 <div>
-                  <h4>Sangrai Mingguan</h4>
-                  <p>Memastikan kesegaran aroma dan crema optimal.</p>
+                  <h4>Weekly Micro-Roasts</h4>
+                  <p>Guaranteed peak crema, vibrant sweetness, and optimal aroma.</p>
                 </div>
               </div>
             </div>
@@ -163,18 +163,18 @@
     <section class="menu-section" id="menu">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-tag">DAFTAR MENU</span>
-          <h2 class="section-title">Minuman Pilihan &amp; Menu Favorit</h2>
+          <span class="section-tag">CURATED MENU</span>
+          <h2 class="section-title">Specialty Brews &amp; Signature Drinks</h2>
           <p class="section-subtitle">
-            Pilih minuman favorit Anda, klik tombol <strong>"Pesan"</strong> untuk mengatur jumlah dan mengirim pesanan instan via WhatsApp kasir.
+            Select your preferred drink and click <strong>"Order"</strong> to customize quantities, add special instructions, and dispatch an instant WhatsApp order to our barista.
           </p>
         </div>
 
         <!-- Category Filters -->
         <div class="menu-filter-bar text-center">
-          <button type="button" class="filter-btn active" data-category="all">Semua Menu</button>
-          <button type="button" class="filter-btn" data-category="coffee">Kopi (Coffee)</button>
-          <button type="button" class="filter-btn" data-category="non-coffee">Non-Kopi (Non-Coffee)</button>
+          <button type="button" class="filter-btn active" data-category="all">All Drinks</button>
+          <button type="button" class="filter-btn" data-category="coffee">Specialty Coffee</button>
+          <button type="button" class="filter-btn" data-category="non-coffee">Non-Coffee</button>
         </div>
 
         <!-- Menu Cards Grid -->
@@ -183,8 +183,8 @@
           <!-- Item 1: Espresso -->
           <article class="menu-card" data-category="coffee" data-id="espresso" data-name="Espresso Blend Valldiii" data-price="22000" data-price-display="Rp 22.000" data-image="images/espresso.jpg">
             <div class="menu-card-img-box">
-              <img src="images/espresso.jpg" alt="Segelas Espresso Blend Valldiii dengan crema tebal" class="menu-card-img" loading="lazy">
-              <span class="menu-card-badge">Arabika 100%</span>
+              <img src="images/espresso.jpg" alt="Rich Espresso Blend Valldiii with dense golden crema" class="menu-card-img" loading="lazy">
+              <span class="menu-card-badge">100% Arabica</span>
             </div>
             <div class="menu-card-body">
               <div class="menu-card-head">
@@ -192,12 +192,12 @@
                 <span class="menu-card-price">Rp 22.000</span>
               </div>
               <p class="menu-card-desc">
-                Ekstraksi murni biji kopi Arabika Nusantara dengan crema tebal, sentuhan cokelat hitam, dan aroma rempah halus.
+                Pure extraction of Indonesian Arabica beans delivering golden velvety crema, deep dark chocolate undertones, and a subtle spice finish.
               </p>
               <div class="menu-card-footer">
-                <span class="menu-card-category-tag">Kopi</span>
+                <span class="menu-card-category-tag">Coffee</span>
                 <button type="button" class="btn btn-order-item" data-action="order" data-id="espresso">
-                  <span>Pesan</span>
+                  <span>Order</span>
                   <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">
                     <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/>
                   </svg>
@@ -209,8 +209,8 @@
           <!-- Item 2: Creamy Aren Latte -->
           <article class="menu-card" data-category="coffee" data-id="aren-latte" data-name="Creamy Aren Latte" data-price="28000" data-price-display="Rp 28.000" data-image="images/aren_latte.jpg">
             <div class="menu-card-img-box">
-              <img src="images/aren_latte.jpg" alt="Segelas Creamy Aren Latte dengan lapisan susu segar dan gula aren" class="menu-card-img" loading="lazy">
-              <span class="menu-card-badge bestseller">Best Seller</span>
+              <img src="images/aren_latte.jpg" alt="Iced Creamy Aren Latte with silky fresh milk and palm sugar layers" class="menu-card-img" loading="lazy">
+              <span class="menu-card-badge bestseller">House Favorite</span>
             </div>
             <div class="menu-card-body">
               <div class="menu-card-head">
@@ -218,12 +218,12 @@
                 <span class="menu-card-price">Rp 28.000</span>
               </div>
               <p class="menu-card-desc">
-                Paduan seimbang espresso bold, susu segar lembut (fresh milk), dan manis alami gula aren organik pilihan.
+                A harmonious marriage of bold espresso roast, silky fresh milk, and the earthy, unrefined caramel sweetness of organic palm sugar.
               </p>
               <div class="menu-card-footer">
-                <span class="menu-card-category-tag">Kopi</span>
+                <span class="menu-card-category-tag">Coffee</span>
                 <button type="button" class="btn btn-order-item" data-action="order" data-id="aren-latte">
-                  <span>Pesan</span>
+                  <span>Order</span>
                   <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">
                     <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/>
                   </svg>
@@ -235,8 +235,8 @@
           <!-- Item 3: Cold Brew Citrus -->
           <article class="menu-card" data-category="coffee" data-id="cold-brew" data-name="Cold Brew Citrus" data-price="30000" data-price-display="Rp 30.000" data-image="images/cold_brew.jpg">
             <div class="menu-card-img-box">
-              <img src="images/cold_brew.jpg" alt="Segelas Cold Brew Citrus segar dengan es batu dan irisan jeruk" class="menu-card-img" loading="lazy">
-              <span class="menu-card-badge">Slow Brew</span>
+              <img src="images/cold_brew.jpg" alt="Refreshing Cold Brew Citrus with clear ice cubes and fresh orange garnish" class="menu-card-img" loading="lazy">
+              <span class="menu-card-badge">Slow Brewed</span>
             </div>
             <div class="menu-card-body">
               <div class="menu-card-head">
@@ -244,12 +244,12 @@
                 <span class="menu-card-price">Rp 30.000</span>
               </div>
               <p class="menu-card-desc">
-                Kopi cold drip yang diseduh dingin selama 16 jam, menghasilkan rasa yang halus dengan kesegaran jeruk sitrus lokal.
+                Slow cold-drip steeped for 16 continuous hours, resulting in an ultra-smooth, low-acidity coffee accented by crisp local citrus peel.
               </p>
               <div class="menu-card-footer">
-                <span class="menu-card-category-tag">Kopi</span>
+                <span class="menu-card-category-tag">Coffee</span>
                 <button type="button" class="btn btn-order-item" data-action="order" data-id="cold-brew">
-                  <span>Pesan</span>
+                  <span>Order</span>
                   <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">
                     <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/>
                   </svg>
@@ -261,7 +261,7 @@
           <!-- Item 4: Matcha Oat Latte -->
           <article class="menu-card" data-category="non-coffee" data-id="matcha-latte" data-name="Matcha Oat Latte" data-price="32000" data-price-display="Rp 32.000" data-image="images/matcha_latte.jpg">
             <div class="menu-card-img-box">
-              <img src="images/matcha_latte.jpg" alt="Segelas Matcha Oat Latte dengan gradasi hijau matcha dan susu oat" class="menu-card-img" loading="lazy">
+              <img src="images/matcha_latte.jpg" alt="Matcha Oat Latte with vivid green ceremonial matcha and creamy oat milk" class="menu-card-img" loading="lazy">
               <span class="menu-card-badge">Non-Coffee</span>
             </div>
             <div class="menu-card-body">
@@ -270,12 +270,12 @@
                 <span class="menu-card-price">Rp 32.000</span>
               </div>
               <p class="menu-card-desc">
-                Bubuk Uji matcha autentik berpadu susu gandum (oat milk) yang creamy, gurih, dan menenangkan tanpa kafein kopi.
+                Premium ceremonial Uji matcha whisked with velvety oat milk for a rich, umami-forward, and calming caffeine-free companion.
               </p>
               <div class="menu-card-footer">
-                <span class="menu-card-category-tag">Non-Kopi</span>
+                <span class="menu-card-category-tag">Non-Coffee</span>
                 <button type="button" class="btn btn-order-item" data-action="order" data-id="matcha-latte">
-                  <span>Pesan</span>
+                  <span>Order</span>
                   <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">
                     <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/>
                   </svg>
@@ -287,7 +287,7 @@
           <!-- Item 5: Signature Chocolate -->
           <article class="menu-card" data-category="non-coffee" data-id="chocolate" data-name="Signature Chocolate" data-price="28000" data-price-display="Rp 28.000" data-image="images/chocolate.jpg">
             <div class="menu-card-img-box">
-              <img src="images/chocolate.jpg" alt="Segelas Signature Chocolate pekat dengan foam susu" class="menu-card-img" loading="lazy">
+              <img src="images/chocolate.jpg" alt="Rich dark Signature Chocolate beverage with dense velvety foam" class="menu-card-img" loading="lazy">
               <span class="menu-card-badge">Non-Coffee</span>
             </div>
             <div class="menu-card-body">
@@ -296,12 +296,12 @@
                 <span class="menu-card-price">Rp 28.000</span>
               </div>
               <p class="menu-card-desc">
-                Cokelat pekat Jawa Timur dengan kekentalan pas, rasa manis seimbang, dan taburan cocoa powder murni.
+                Single-origin East Java dark cacao simmered with textured milk, balanced natural sweetness, and a fine dusting of pure raw cocoa.
               </p>
               <div class="menu-card-footer">
-                <span class="menu-card-category-tag">Non-Kopi</span>
+                <span class="menu-card-category-tag">Non-Coffee</span>
                 <button type="button" class="btn btn-order-item" data-action="order" data-id="chocolate">
-                  <span>Pesan</span>
+                  <span>Order</span>
                   <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">
                     <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/>
                   </svg>
@@ -315,35 +315,35 @@
     </section>
 
     <!-- ========================================================
-         5. KEUNGGULAN SECTION (WHY CHOOSE US)
+         5. FEATURES SECTION (WHY CHOOSE US)
          ======================================================== -->
     <section class="features-section" id="features">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-tag">KEUNGGULAN</span>
-          <h2 class="section-title">Standar Kualitas di Setiap Seduhan</h2>
+          <span class="section-tag">OUR CRAFT</span>
+          <h2 class="section-title">Standards of Excellence in Every Pour</h2>
           <p class="section-subtitle">
-            Komitmen kami untuk memberikan pengalaman ngopi yang jujur, segar, dan berkesan.
+            Our unwavering commitment to delivering an honest, fresh, and deeply memorable coffee experience.
           </p>
         </div>
 
         <div class="features-grid">
           <div class="feature-box">
             <div class="feature-icon-wrap">☕</div>
-            <h3>Biji Kopi Asli Nusantara</h3>
-            <p>Kami bermitra dengan perkebunan lokal di berbagai daerah Nusantara untuk menyajikan cita rasa khas daerah yang kaya dan autentik.</p>
+            <h3>Authentic Indonesian Origins</h3>
+            <p>Directly partnering with ethical highland farmers across the Indonesian archipelago to highlight unique terroir and rich heritage flavors.</p>
           </div>
 
           <div class="feature-box">
             <div class="feature-icon-wrap">⏱️</div>
-            <h3>Penyangraian Segar Tiap Minggu</h3>
-            <p>Roasting berkala dalam jumlah kecil menjamin aroma kopi tetap kuat dan karakter rasa keluar sempurna saat diekstraksi.</p>
+            <h3>Fresh Weekly Micro-Roasts</h3>
+            <p>Roasting in meticulous micro-batches ensures peak aromatic complexity and preserves vital flavor clarity during extraction.</p>
           </div>
 
           <div class="feature-box">
             <div class="feature-icon-wrap">💻</div>
-            <h3>Ruang Tenang &amp; Ramah Kerja</h3>
-            <p>Konsep kedai yang tenang dengan pencahayaan hangat, cocok untuk bekerja fokus dengan laptop atau membaca buku kesukaan Anda.</p>
+            <h3>Work-Friendly Sanctuary</h3>
+            <p>Thoughtfully configured with warm ambient lighting, peaceful acoustic balance, and fast connectivity for productive mornings and relaxed afternoons.</p>
           </div>
         </div>
       </div>
@@ -355,25 +355,25 @@
     <section class="gallery-section" id="gallery">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-tag">GALERI KEDAI</span>
-          <h2 class="section-title">Suasana &amp; Ruang Seduh Kami</h2>
+          <span class="section-tag">OUR SPACE</span>
+          <h2 class="section-title">Atmosphere &amp; Brewing Counter</h2>
           <p class="section-subtitle">
-            Sekilas pandang suasana hangat, aktivitas barista, dan bahan pilihan yang kami gunakan setiap hari.
+            A glimpse into our warm space, focused barista craft, and curated ingredients prepared fresh every morning.
           </p>
         </div>
 
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="images/gallery_1.jpg" alt="Suasana interior bar kedai kopi dengan pencahayaan hangat" class="gallery-img" loading="lazy">
-            <div class="gallery-caption">Ruang Bar &amp; Suasana Seduh</div>
+            <img src="images/gallery_1.jpg" alt="Warm interior coffee bar with cozy ambient lighting" class="gallery-img" loading="lazy">
+            <div class="gallery-caption">Espresso Bar &amp; Brewing Counter</div>
           </div>
           <div class="gallery-item">
-            <img src="images/gallery_2.jpg" alt="Proses seduh manual brew v60 dengan teko khusus" class="gallery-img" loading="lazy">
-            <div class="gallery-caption">Proses Manual Brew V60</div>
+            <img src="images/gallery_2.jpg" alt="Artisan manual pour-over V60 extraction" class="gallery-img" loading="lazy">
+            <div class="gallery-caption">Manual Pour-Over V60 Extraction</div>
           </div>
           <div class="gallery-item">
-            <img src="images/gallery_3.jpg" alt="Biji kopi sangrai specialty Nusantara" class="gallery-img" loading="lazy">
-            <div class="gallery-caption">Biji Kopi Artisan Pilihan</div>
+            <img src="images/gallery_3.jpg" alt="Curated roasted specialty coffee beans" class="gallery-img" loading="lazy">
+            <div class="gallery-caption">Curated Specialty Roasted Beans</div>
           </div>
         </div>
       </div>
@@ -386,25 +386,25 @@
       <div class="container">
         <div class="contact-card-box">
           <div class="contact-info-col">
-            <span class="section-tag">HUBUNGI KAMI</span>
-            <h2 class="contact-heading">Kunjungi Kedai atau Pesan Terlebih Dahulu</h2>
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2 class="contact-heading">Visit Our Counter or Order Ahead</h2>
             <p class="contact-desc">
-              Punya pertanyaan mengenai varian biji kopi minggu ini atau ingin memesan untuk dibawa pulang? Barista kami siap melayani Anda melalui WhatsApp resmi berikut.
+              Curious about this week's single-origin bean rotation or planning a quick takeaway pick-up? Our baristas are ready to assist you directly via official WhatsApp.
             </p>
 
             <div class="contact-details-list">
               <div class="contact-item">
                 <span class="contact-item-icon">📱</span>
                 <div>
-                  <strong>WhatsApp Kasir Resmi</strong>
-                  <p><a href="https://wa.me/6281210119304" target="_blank" rel="noopener noreferrer">081210119304</a> (Respon Cepat)</p>
+                  <strong>Official WhatsApp Barista</strong>
+                  <p><a href="https://wa.me/6281210119304" target="_blank" rel="noopener noreferrer">081210119304</a> (Fast Response)</p>
                 </div>
               </div>
 
               <div class="contact-item">
                 <span class="contact-item-icon">✉️</span>
                 <div>
-                  <strong>Email Resmi</strong>
+                  <strong>Official Email</strong>
                   <p><a href="mailto:aftaasifaasifa33083@gmail.com">aftaasifaasifa33083@gmail.com</a></p>
                 </div>
               </div>
@@ -412,29 +412,29 @@
               <div class="contact-item">
                 <span class="contact-item-icon">🕒</span>
                 <div>
-                  <strong>Jam Operasional Kedai (Demo)</strong>
-                  <p>Setiap Hari: 08.00 – 22.00 WIB</p>
+                  <strong>Operating Hours (Demo)</strong>
+                  <p>Daily: 08:00 AM – 10:00 PM WIB</p>
                 </div>
               </div>
 
               <div class="contact-item">
                 <span class="contact-item-icon">📍</span>
                 <div>
-                  <strong>Status Proyek Demo</strong>
-                  <p>Proyek showcase portfolio front-end oleh Valldiii.</p>
+                  <strong>Project Showcase Notice</strong>
+                  <p>Professional frontend portfolio demo engineered by Valldiii.</p>
                 </div>
               </div>
             </div>
 
             <div class="contact-actions">
-              <a href="https://wa.me/6281210119304?text=Halo%20Valldiii%20Coffee%2C%20saya%20tertarik%20bertanya%20tentang%20menu%20kopi" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-wa-contact">
-                <span>Chat Kasir via WhatsApp</span>
+              <a href="https://wa.me/6281210119304?text=Hello%20Valldiii%20Coffee%2C%20I%20have%20an%20inquiry%20about%20your%20coffee%20menu" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-wa-contact">
+                <span>Chat Barista on WhatsApp</span>
                 <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                 </svg>
               </a>
               <a href="#menu" class="btn btn-secondary">
-                <span>Pilih Menu Sekarang</span>
+                <span>Browse Full Menu</span>
               </a>
             </div>
           </div>
@@ -454,17 +454,17 @@
           <p class="footer-tagline">Artisan Roast &amp; Specialty Coffee Demo Website.</p>
         </div>
         <div class="footer-nav">
-          <a href="#hero">Beranda</a>
-          <a href="#about">Tentang</a>
+          <a href="#hero">Home</a>
+          <a href="#about">Our Story</a>
           <a href="#menu">Menu</a>
-          <a href="#features">Keunggulan</a>
-          <a href="#contact">Kontak</a>
+          <a href="#features">Our Craft</a>
+          <a href="#contact">Visit Us</a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Valldiii Coffee Shop Demo. Portofolio Front-End Karya Valldiii.</p>
-        <p><a href="../../index.html" class="back-link" target="_top">← Kembali ke Halaman Portofolio Valldiii</a></p>
+        <p>&copy; 2026 Valldiii Coffee Shop Demo. Frontend Portfolio Craft by Valldiii.</p>
+        <p><a href="../../index.html" class="back-link" target="_top">← Return to Valldiii Portfolio</a></p>
       </div>
     </div>
   </footer>
@@ -475,8 +475,8 @@
   <div class="order-modal-backdrop" id="order-modal-backdrop" aria-hidden="true">
     <div class="order-modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-drink-name">
       <div class="modal-card-header">
-        <div class="modal-card-badge">Pemesanan Minuman</div>
-        <button type="button" class="modal-close-btn" id="modal-order-close" aria-label="Tutup panel pesanan">
+        <div class="modal-card-badge">Place Your Order</div>
+        <button type="button" class="modal-close-btn" id="modal-order-close" aria-label="Close order dialog">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -487,53 +487,53 @@
       <div class="modal-card-body">
         <!-- Selected Item Preview -->
         <div class="modal-product-summary">
-          <img src="images/aren_latte.jpg" alt="Pratinjau minuman" class="modal-product-img" id="modal-product-img">
+          <img src="images/aren_latte.jpg" alt="Selected beverage preview" class="modal-product-img" id="modal-product-img">
           <div class="modal-product-text">
             <h3 class="modal-product-title" id="modal-drink-name">Creamy Aren Latte</h3>
             <span class="modal-unit-price" id="modal-unit-price">Rp 28.000 / cup</span>
-            <p class="modal-product-desc" id="modal-drink-desc">Espresso lembut dipadu susu murni dan gula aren organik.</p>
+            <p class="modal-product-desc" id="modal-drink-desc">A balanced blend of bold espresso, smooth fresh milk, and organic palm sugar.</p>
           </div>
         </div>
 
         <!-- Quantity Stepper -->
         <div class="modal-form-group">
-          <label class="modal-label" for="order-quantity-input">Jumlah Pesanan (Cup):</label>
+          <label class="modal-label" for="order-quantity-input">Quantity (Cup):</label>
           <div class="quantity-stepper">
-            <button type="button" class="stepper-btn" id="btn-qty-minus" aria-label="Kurangi jumlah pesanan">−</button>
+            <button type="button" class="stepper-btn" id="btn-qty-minus" aria-label="Decrease quantity">−</button>
             <input type="number" id="order-quantity-input" class="quantity-input" value="1" min="1" max="50" readonly>
-            <button type="button" class="stepper-btn" id="btn-qty-plus" aria-label="Tambah jumlah pesanan">+</button>
+            <button type="button" class="stepper-btn" id="btn-qty-plus" aria-label="Increase quantity">+</button>
           </div>
         </div>
 
         <!-- Order Notes -->
         <div class="modal-form-group">
-          <label class="modal-label" for="order-notes-input">Catatan Khusus (Opsional):</label>
-          <input type="text" id="order-notes-input" class="modal-input" placeholder="Contoh: Less sugar / Es sedang / Panas">
+          <label class="modal-label" for="order-notes-input">Special Instructions (Optional):</label>
+          <input type="text" id="order-notes-input" class="modal-input" placeholder="e.g., Less sugar / Iced / Oat milk preference">
         </div>
 
         <!-- Dynamic Subtotal Calculation -->
         <div class="modal-subtotal-box">
           <div class="subtotal-row">
-            <span class="subtotal-label">Subtotal Pesanan:</span>
+            <span class="subtotal-label">Order Subtotal:</span>
             <span class="subtotal-val" id="modal-subtotal-val">Rp 28.000</span>
           </div>
-          <p class="subtotal-hint">Harga sudah termasuk cangkir takeaway ramah lingkungan.</p>
+          <p class="subtotal-hint">Price includes eco-friendly compostable takeaway packaging.</p>
         </div>
 
         <!-- Demo Transparency Notice -->
         <div class="modal-demo-notice">
           <span class="notice-icon">ℹ️</span>
-          <span>Pesanan ini akan langsung diformat dan dikirim ke nomor WhatsApp kasir resmi Valldiii (081210119304).</span>
+          <span>This order will be automatically formatted and sent to official Valldiii WhatsApp (+62 812-1011-9304).</span>
         </div>
       </div>
 
       <div class="modal-card-footer">
-        <button type="button" class="btn btn-secondary btn-sm" id="btn-cancel-order">Batal</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="btn-cancel-order">Cancel</button>
         <button type="button" class="btn btn-primary" id="btn-submit-whatsapp">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
             <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.49 0-2.95-.4-4.23-1.16l-.3-.18-3.14.82.84-3.06-.2-.31c-.83-1.33-1.27-2.87-1.27-4.46 0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4 1.55 1.55 2.4 3.61 2.4 5.8 0 4.52-3.68 8.19-8.2 8.19zm4.49-6.14c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
           </svg>
-          <span>Pesan via WhatsApp</span>
+          <span>Order via WhatsApp</span>
         </button>
       </div>
     </div>
@@ -542,7 +542,7 @@
   <!-- Toast Notification Hub -->
   <div class="toast-hub" id="toast-hub" aria-live="polite"></div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2.0"></script>
 </body>
 
 </html>

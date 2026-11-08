@@ -39,76 +39,76 @@ document.addEventListener('DOMContentLoaded', () => {
    * ====================================================== */
   const PROJECTS_DATA = {
     coffee: {
-      category: 'Proyek Riil Lokal',
+      category: 'Portfolio Demo Project',
       title: 'Valldiii Coffee Shop',
-      description: 'Website demo kedai kopi berkonsep modern dan hangat yang dirancang mandiri menggunakan kode murni. Berfungsi penuh menampilkan produk artisan coffee, katalog menu interaktif dengan filter instan (Kopi & Non-Kopi), profil cerita kedai, serta alur pemesanan langsung.',
+      description: 'A modern, welcoming coffee shop demo website built to showcase artisan beverage menus and local roasteries. Crafted with pure semantic code, it features instant category filtering (Coffee & Non-Coffee) with vanilla JavaScript, an adaptive CSS Grid menu catalog, brand story section, and an intuitive quick-order workflow.',
       features: [
-        'Hero section dinamis dengan ajakan aksi (CTA) yang jelas',
-        'Filter kategori menu instan (Semua, Kopi, Non-Kopi) dengan Vanilla JavaScript murni',
-        'Tata letak kartu menu responsif berbasis CSS Grid adaptif',
-        'Cerita kedai & kurasi biji kopi pilihan lokal Nusantara',
-        'Alur pemesanan cepat tanpa ketergantungan library luar',
-        'Struktur semantik HTML5 yang siap untuk pengindeksan mesin pencari'
+        'Dynamic hero banner with clear Call-to-Action placement',
+        'Instant category filtering (All, Coffee, Non-Coffee) built with pure Vanilla JavaScript',
+        'Adaptive CSS Grid menu card layout that seamlessly adjusts to any screen size',
+        'Curated brand storytelling highlighting local artisan roasts',
+        'Fast and responsive ordering workflow without third-party library overhead',
+        'Clean semantic HTML5 architecture ready for search engine indexing'
       ],
-      techStack: ['HTML5 Semantik', 'CSS3 Modern', 'Vanilla JavaScript', 'CSS Grid', 'Responsive Design'],
-      sourceInfo: 'Kode sumber lengkap demo Coffee Shop tersedia di direktori lokal "projects/coffee-shop/" (index.html, style.css, script.js). Repositori GitHub resmi: https://github.com/valldiii/valldiii-portfolio',
+      techStack: ['Semantic HTML5', 'Modern CSS3', 'Vanilla JavaScript', 'CSS Grid', 'Responsive Design'],
+      sourceInfo: 'Complete source code for the Coffee Shop demo is available in the local directory "projects/coffee-shop/" (index.html, style.css, script.js). Official GitHub repository: https://github.com/valldiii/valldiii-portfolio',
       githubUrl: 'https://github.com/valldiii/valldiii-portfolio',
       actionUrl: 'projects/coffee-shop/index.html',
-      actionText: 'Buka Live Demo'
+      actionText: 'Open Live Demo'
     },
 
     nusarasa: {
-      category: 'Proyek Riil UMKM',
+      category: 'Portfolio Demo Project',
       title: 'NUSA RASA – Catering & Food Service',
-      description: 'Website company profile komersial untuk usaha catering dan kuliner Nusantara. Dibuat dengan kode murni untuk memberikan pengalaman pemesanan yang cepat bagi calon klien melalui katalog menu responsif, komparasi paket prasmanan, galeri hidangan beresolusi tinggi, serta formulir pemesanan otomatis terintegrasi ke WhatsApp.',
+      description: 'A commercial company profile website demo crafted for a traditional culinary and catering business. Designed to provide visitors with a seamless experience through an interactive dish catalog, transparent buffet package comparison, event photography gallery, and an automated ordering inquiry form integrated directly with WhatsApp.',
       features: [
-        'Desain visual hangat & profesional khas Nusantara dengan palet warna cream, hijau tua, dan oranye lembut',
-        'Filter kategori menu instan (Nasi Kotak, Prasmanan, Tumpeng Syukuran) tanpa reload halaman',
-        'Sistem reservasi dan pemesanan interaktif dengan generator format pesan otomatis ke WhatsApp API',
-        'Komparasi paket catering transparan lengkap dengan daftar fasilitas dan menu pendamping',
-        'Galeri estetis hidangan dan tata saji meja buffet prasmanan pernikahan/kantor',
-        'Tata letak 100% responsif untuk smartphone, tablet, laptop, hingga layar monitor lebar'
+        'Warm, authentic culinary brand identity with a refined cream, forest green, and gold palette',
+        'Instant menu category filter (Box Meals, Buffet, Ceremonial Tumpeng) with zero page reloads',
+        'Interactive reservation inquiry form with automated message generator for WhatsApp',
+        'Transparent catering package comparison complete with menu breakdowns and package benefits',
+        'Curated photography gallery showcasing buffet presentation and event table settings',
+        '100% fluid responsive layout tested across mobile smartphones, tablets, and wide monitors'
       ],
-      techStack: ['HTML5 Semantik', 'CSS3 Modern (Cream & Green)', 'Vanilla JavaScript', 'WhatsApp Business API', 'Responsive Layout'],
-      sourceInfo: 'Kode sumber lengkap demo NUSA RASA tersedia di direktori lokal "projects/nusa-rasa/" (index.html, style.css, script.js). Repositori GitHub resmi: https://github.com/valldiii/valldiii-portfolio',
+      techStack: ['Semantic HTML5', 'Modern CSS3 (Cream & Forest Green)', 'Vanilla JavaScript', 'WhatsApp Business API', 'Responsive Layout'],
+      sourceInfo: 'Complete source code for the NUSA RASA demo is available in the local directory "projects/nusa-rasa/" (index.html, style.css, script.js). Official GitHub repository: https://github.com/valldiii/valldiii-portfolio',
       githubUrl: 'https://github.com/valldiii/valldiii-portfolio',
       actionUrl: 'projects/nusa-rasa/index.html',
-      actionText: 'Buka Live Demo'
+      actionText: 'Open Live Demo'
     },
 
     agency: {
-      category: 'Studi Konsep Landing Page',
-      title: 'Landing Page Jasa Kreatif',
-      description: 'Eksplorasi pembuatan landing page satu halaman (one-page) yang berorientasi pada rasio konversi tinggi. Dirancang dengan hierarki visual kontras, tipografi tegas, susunan fitur padat, dan waktu rendering instan tanpa framework CSS.',
+      category: 'Layout Study // One-Page',
+      title: 'Creative Studio Landing Page',
+      description: 'A high-impact, conversion-oriented one-page landing layout concept designed for independent studios and creative agencies. Features strong visual contrast, focused typography hierarchy, dense feature showcases, and instant load speeds without third-party CSS libraries.',
       features: [
-        'Navigasi halus satu halaman dengan section sorotan layanan unggulan',
-        'Hierarki tipografi editorial untuk memperkuat daya tarik promosi jasa',
-        'Tata letak kartu fitur adaptif berbasis CSS Flexbox',
-        'Performa pemuatan ultra-cepat dengan skor Lighthouse optimal',
-        'Integrasi tombol Call-to-Action terarah untuk konsultasi instan'
+        'Smooth single-page navigation with targeted service highlight sections',
+        'Editorial typography hierarchy that commands attention and drives visitor conversion',
+        'Adaptive feature card layouts built with modern CSS Flexbox',
+        'Ultra-fast loading performance with optimal Lighthouse benchmarks',
+        'Clear Call-to-Action placement designed for instant client inquiries'
       ],
-      techStack: ['HTML5 Semantik', 'CSS Flexbox', 'Mobile-First', 'Performance Audit'],
-      sourceInfo: 'Studi tata letak dan eksplorasi antarmuka front-end murni untuk memaksimalkan rasio konversi.',
+      techStack: ['Semantic HTML5', 'CSS Flexbox', 'Mobile-First', 'Performance Optimization'],
+      sourceInfo: 'Frontend architectural study focused on conversion rate optimization and pure code structure.',
       githubUrl: null,
       actionUrl: '#contact',
-      actionText: 'Konsultasi Konsep Serupa'
+      actionText: 'Discuss Similar Concept'
     },
 
     business: {
-      category: 'Studi Konsep Website UMKM',
-      title: 'Simple Business Website (UMKM)',
-      description: 'Konsep website profil usaha kecil dan menengah (UMKM) untuk membangun kehadiran digital yang profesional, menampilkan katalog menu/produk ringkas, jam operasional, dan integrasi pemesanan chat langsung melalui WhatsApp bisnis.',
+      category: 'Layout Study // Company Profile',
+      title: 'Small Business & Storefront Website',
+      description: 'A local business and retail profile concept designed to establish a credible online presence. Showcases compact product and service catalogs, operating hours, physical location, and direct customer inquiry integration via WhatsApp.',
       features: [
-        'Penyajian profil dan identitas usaha lokal yang rapi serta kredibel',
-        'Etalase produk atau menu ringkas dengan label harga yang transparan',
-        'Integrasi tautan pesan instan ke WhatsApp bisnis dengan format pesan otomatis',
-        'Ukuran aset sangat ringan sehingga mudah dibuka pelanggan dengan koneksi terbatas'
+        'Credible and well-structured business profile presentation for local enterprises',
+        'Compact product/service showcase with transparent pricing and clear descriptions',
+        'Direct-to-WhatsApp messaging integration with pre-filled inquiry format',
+        'Ultra-lightweight asset footprint ensuring effortless loading on mobile connections'
       ],
-      techStack: ['HTML5 Semantik', 'CSS Grid', 'Vanilla JavaScript', 'WhatsApp API'],
-      sourceInfo: 'Studi rancangan profil bisnis UMKM dan etalase produk terintegrasi langsung ke WhatsApp bisnis.',
+      techStack: ['Semantic HTML5', 'CSS Grid', 'Vanilla JavaScript', 'WhatsApp API'],
+      sourceInfo: 'Layout exploration for small business storefronts and direct WhatsApp customer inquiries.',
       githubUrl: null,
       actionUrl: '#contact',
-      actionText: 'Konsultasi Konsep Serupa'
+      actionText: 'Discuss Similar Concept'
     }
   };
 
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (whatsappDisplay) whatsappDisplay.textContent = CONTACT_CONFIG.whatsappDisplay;
 
   if (btnEmail) {
-    btnEmail.href = `mailto:${CONTACT_CONFIG.email}?subject=Diskusi%20Proyek%20Website%20-%20Valldiii`;
+    btnEmail.href = `mailto:${CONTACT_CONFIG.email}?subject=Website%20Project%20Inquiry%20-%20Valldiii`;
   }
   if (btnWhatsapp) {
     btnWhatsapp.href = CONTACT_CONFIG.whatsappLink;
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroMockupCard = document.querySelector('.hero-col-mockup .mockup-frame-card');
   if (heroMockupCard) {
     heroMockupCard.style.cursor = 'pointer';
-    heroMockupCard.setAttribute('title', 'Klik untuk membuka demo Valldiii Coffee Shop di tab baru');
+    heroMockupCard.setAttribute('title', 'Click to open Valldiii Coffee Shop live demo in a new tab');
     heroMockupCard.addEventListener('click', (e) => {
       // Don't duplicate action if clicking direct anchor inside
       if (e.target.closest('a')) return;
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalCategory) modalCategory.textContent = data.category;
     if (modalTitle) modalTitle.textContent = data.title;
     if (modalDesc) modalDesc.textContent = data.description;
-    if (modalSourceNote) modalSourceNote.textContent = data.sourceInfo || 'Tersedia di direktori proyek lokal.';
+    if (modalSourceNote) modalSourceNote.textContent = data.sourceInfo || 'Available in local project directory.';
 
     if (modalFeatures) {
       modalFeatures.innerHTML = '';
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         const infoMsg = (data && data.sourceInfo)
           ? data.sourceInfo
-          : 'Kode sumber proyek ini tersimpan secara lokal dan belum dipublikasikan di GitHub.';
+          : 'Source code for this concept is maintained locally and is not yet published on GitHub.';
         showToast(infoMsg);
       }
     });
@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-copy-target]').forEach(button => {
     button.addEventListener('click', async () => {
       const textToCopy = button.getAttribute('data-copy-target');
-      const copyType = button.getAttribute('data-copy-type') || 'Teks';
+      const copyType = button.getAttribute('data-copy-type') || 'Text';
 
       try {
         if (navigator.clipboard && window.isSecureContext) {
@@ -427,9 +427,9 @@ document.addEventListener('DOMContentLoaded', () => {
           document.execCommand('copy');
           document.body.removeChild(tempTextArea);
         }
-        showToast(`${copyType} berhasil disalin!`);
+        showToast(`${copyType} copied to clipboard!`);
       } catch (err) {
-        showToast(`Salin: ${textToCopy}`);
+        showToast(`Copied: ${textToCopy}`);
       }
     });
   });

@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Valldiii — Freelance Frontend Web Developer. Crafting fast, responsive, and modern landing pages, small business websites, and company profiles for international clients.">
+  <meta name="author" content="Valldiii">
+  <meta name="theme-color" content="#050814">
+  <title>VALLDIII — Freelance Web Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=3.1">
+</head>
+<body>
+
+  <!-- ========================================================
+       1. HEADER & NAVBAR
+       ======================================================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <!-- Minimalist Text Logo -->
+      <a href="#home" class="brand-logo" aria-label="Valldiii - Home">
+        <span class="logo-text">VALLDIII</span>
+        <span class="logo-dot" aria-hidden="true">.</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-action">
+        <a href="#contact" class="btn btn-nav-cta">
+          <span>Let's Talk</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" width="15" height="15" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle mobile navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- ========================================================
+         2. HERO SECTION (EDITORIAL 2-COLUMN LAYOUT)
+         ======================================================== -->
+    <section class="hero-section" id="home">
+      <!-- Ambient Gradient Backlight -->
+      <div class="hero-glow-orb hero-orb-left" aria-hidden="true"></div>
+      <div class="hero-glow-orb hero-orb-right" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Left Column: Headline & Call To Actions -->
+        <div class="hero-col-content" data-reveal="fade-up">
+          <div class="hero-status-pill">
+            <span class="pulse-core"></span>
+            <span class="status-label">AVAILABLE FOR FREELANCE PROJECTS</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Modern, Responsive Websites <br>
+            <span class="headline-gradient">Tailored for Growing</span> <br>
+            Businesses<span class="accent-period">.</span>
+          </h1>
+
+          <p class="hero-lead">
+            I am Valldiii, an independent frontend web developer. I craft modern, responsive websites for small businesses, entrepreneurs, and startups—helping them build a credible online presence that turns visitors into clients.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-work">
+              <span>View Selected Work</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="17" height="17" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+              <span>Discuss Your Project</span>
+            </a>
+          </div>
+
+          <!-- Developer Telemetry Badges -->
+          <div class="hero-telemetry-strip">
+            <div class="telemetry-item">
+              <span class="telemetry-tag">01 // CODE</span>
+              <span class="telemetry-value">Semantic HTML5 &amp; CSS3</span>
+            </div>
+            <div class="telemetry-separator" aria-hidden="true"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-tag">02 // LOGIC</span>
+              <span class="telemetry-value">Fast Vanilla JavaScript</span>
+            </div>
+            <div class="telemetry-separator" aria-hidden="true"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-tag">03 // DESIGN</span>
+              <span class="telemetry-value">Fluid Mobile-First</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: High-Fidelity Developer Browser & Code Mockup -->
+        <div class="hero-col-mockup" data-reveal="fade-left">
+          <div class="mockup-frame-card" aria-label="Interactive website interface and code preview">
+            <!-- Decorative Window Grid Header -->
+            <div class="mockup-window-topbar">
+              <div class="window-controls" aria-hidden="true">
+                <span class="ctrl-dot dot-close"></span>
+                <span class="ctrl-dot dot-minimize"></span>
+                <span class="ctrl-dot dot-maximize"></span>
+              </div>
+              <a href="projects/coffee-shop/index.html" target="_blank" rel="noopener noreferrer" class="window-address-tab" title="Open Valldiii Coffee Shop live demo in a new tab" aria-label="Open Valldiii Coffee Shop live demo in a new tab">
+                <span class="addr-protocol">https://</span>valldiii.github.io/valldiii-portfolio/projects/coffee-shop/
+              </a>
+              <div class="window-status-badge">
+                <span class="status-live-dot"></span> LIVE 200 OK
+              </div>
+            </div>
+
+            <!-- Mockup Interactive Viewport -->
+            <div class="mockup-viewport">
+              <!-- Decorative Grid Lines -->
+              <div class="viewport-grid-bg" aria-hidden="true"></div>
+
+              <!-- Top Micro Nav -->
+              <div class="mock-browser-nav">
+                <div class="mock-nav-left">
+                  <span class="mock-brand-badge">VALLDIII.GITHUB.IO</span>
+                  <span class="mock-nav-item active">Index.html</span>
+                  <span class="mock-nav-item">Style.css</span>
+                </div>
+                <div class="mock-nav-right">
+                  <span class="mock-build-pill">✓ Clean Code</span>
+                </div>
+              </div>
+
+              <!-- Visual Website Showcase Inside Mockup -->
+              <div class="mock-showcase-box">
+                <div class="mock-eyebrow-line">
+                  <span class="mock-num">01.0 // UI/UX</span>
+                  <span class="mock-line"></span>
+                  <span class="mock-chip">FAST LOAD</span>
+                </div>
+                <h3 class="mock-h3">Modern Interfaces Built with Precision.</h3>
+                <p class="mock-p">
+                  Clean CSS Grid and Flexbox architecture engineered without heavy framework overhead, delivering instant page loads on real-world mobile devices.
+                </p>
+
+                <!-- Mini Cards Component Demo -->
+                <div class="mock-metrics-row">
+                  <div class="mock-metric-card">
+                    <span class="metric-title">Performance</span>
+                    <span class="metric-num">100%</span>
+                    <div class="metric-bar"><div class="metric-fill" style="width: 100%;"></div></div>
+                  </div>
+                  <div class="mock-metric-card">
+                    <span class="metric-title">Mobile Ready</span>
+                    <span class="metric-num">Fluid</span>
+                    <div class="metric-bar"><div class="metric-fill" style="width: 95%;"></div></div>
+                  </div>
+                  <div class="mock-metric-card">
+                    <span class="metric-title">Zero Bloat</span>
+                    <span class="metric-num">0 KB Lib</span>
+                    <div class="metric-bar"><div class="metric-fill" style="width: 100%;"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Code Snippet Bar -->
+              <div class="mock-code-strip">
+                <div class="code-comment">// Developer Mindset</div>
+                <div class="code-line"><span class="c-keyword">const</span> developer = { <span class="c-prop">name</span>: <span class="c-str">'Valldiii'</span>, <span class="c-prop">role</span>: <span class="c-str">'Freelance Web Developer'</span>, <span class="c-prop">focus</span>: <span class="c-str">'Clean Code &amp; Fast Websites'</span> };</div>
+              </div>
+            </div>
+
+            <!-- Mockup Window Footer Terminal -->
+            <div class="mockup-window-footer">
+              <span class="term-left">⚡ Branch: <code>main</code> • Available for freelance projects worldwide</span>
+              <span class="term-right">Valldiii Studio // 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         3. ABOUT SECTION (PERSONAL BRANDING & PROFESSIONAL PROFILE)
+         ======================================================== -->
+    <section class="site-section about-section" id="about">
+      <div class="container">
+        <div class="section-badge-wrap" data-reveal="fade-up">
+          <span class="editorial-badge">01 // ABOUT ME</span>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Personal Brand Profile Card with Dedicated Photo Slot -->
+          <div class="about-profile-card" data-reveal="fade-right">
+            <div class="profile-avatar-wrapper">
+              <img 
+                src="assets/images/profile.jpg" 
+                alt="Valldiii — Freelance Web Developer" 
+                class="profile-photo-img" 
+                id="profile-avatar-img"
+                onerror="this.onerror=null; this.src='assets/images/profile-placeholder.svg';"
+                width="280" 
+                height="280"
+                loading="lazy"
+              >
+              <div class="avatar-status-badge" title="Available for freelance projects">
+                <span class="status-ping"></span>
+                <span class="status-text">Available for Work</span>
+              </div>
+            </div>
+
+            <h3 class="profile-card-name">Valldiii</h3>
+            <p class="profile-card-role">Freelance Frontend Developer</p>
+
+            <ul class="profile-meta-list">
+              <li class="profile-meta-item">
+                <span class="profile-meta-label">Focus</span>
+                <span class="profile-meta-val">Websites &amp; Landing Pages</span>
+              </li>
+              <li class="profile-meta-item">
+                <span class="profile-meta-label">Location</span>
+                <span class="profile-meta-val">Worldwide (Remote)</span>
+              </li>
+              <li class="profile-meta-item">
+                <span class="profile-meta-label">Languages</span>
+                <span class="profile-meta-val">English &amp; Indonesian</span>
+              </li>
+              <li class="profile-meta-item">
+                <span class="profile-meta-label">Turnaround</span>
+                <span class="profile-meta-val">Fast &amp; Transparent</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Narrative, Core Value Proposition & Bento Cards -->
+          <div class="about-main-narrative" data-reveal="fade-left">
+            <h2 class="section-title">
+              Crafting clean, dependable websites with solid technical foundations.
+            </h2>
+            <div class="about-bio-text">
+              <p>
+                Hello! I am <strong>Valldiii</strong>, an independent freelance web developer and Computer Science student with a dedicated focus on modern frontend web development.
+              </p>
+              <p>
+                I specialize in creating clean, fast, and responsive websites—including high-converting <strong>landing pages</strong>, <strong>small business websites</strong>, and <strong>company profiles</strong>. I help small business owners, startups, and entrepreneurs establish a credible online presence that presents their services clearly and turns visitors into customers.
+              </p>
+              <p>
+                I believe high-quality websites are built on solid fundamentals rather than bloated frameworks: <strong>semantic HTML5</strong> for structure and accessibility, <strong>modern CSS</strong> for fluid responsive layouts, and <strong>pure vanilla JavaScript</strong> for swift interactivity. My commitment to you is grounded in <strong>technical honesty, clean code craftsmanship, and direct, transparent communication</strong>.
+              </p>
+            </div>
+
+            <div class="about-action-row">
+              <a href="#contact" class="btn btn-primary btn-sm">
+                <span>Discuss Your Project</span>
+              </a>
+              <a href="#services" class="btn btn-outline btn-sm">
+                <span>Explore Services</span>
+              </a>
+            </div>
+
+            <!-- Bento Highlights: 4 Honest Strengths -->
+            <div class="about-bento-grid">
+              <!-- Bento Card 1 -->
+              <div class="bento-card">
+                <div class="bento-icon-tag">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                  </svg>
+                </div>
+                <h3 class="bento-title">Computer Science Foundation</h3>
+                <p class="bento-desc">
+                  Applying algorithmic thinking, software engineering discipline, and modern web standards from university computing studies.
+                </p>
+                <span class="bento-meta">Education &amp; Core Logic</span>
+              </div>
+
+              <!-- Bento Card 2 -->
+              <div class="bento-card">
+                <div class="bento-icon-tag">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <h3 class="bento-title">Mobile-First &amp; Clean Code</h3>
+                <p class="bento-desc">
+                  Writing readable, well-commented code tested extensively on smartphones, tablets, laptops, and desktop monitors.
+                </p>
+                <span class="bento-meta">Implementation Standard</span>
+              </div>
+
+              <!-- Bento Card 3 -->
+              <div class="bento-card">
+                <div class="bento-icon-tag">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                </div>
+                <h3 class="bento-title">Zero Bloat &amp; Fast Loading</h3>
+                <p class="bento-desc">
+                  No heavy templates or redundant third-party libraries, ensuring rapid load times for international visitors on any network.
+                </p>
+                <span class="bento-meta">Performance Philosophy</span>
+              </div>
+
+              <!-- Bento Card 4 -->
+              <div class="bento-card">
+                <div class="bento-icon-tag">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+                <h3 class="bento-title">Transparent Communication</h3>
+                <p class="bento-desc">
+                  Realistic delivery timelines, structured milestone updates, and prompt, friendly responses via WhatsApp and Email.
+                </p>
+                <span class="bento-meta">Client Commitment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. TECH STACK SECTION (FOCUSED & HONEST STACK)
+         ======================================================== -->
+    <section class="site-section tech-section" id="tech-stack">
+      <div class="container">
+        <div class="section-badge-wrap text-center" data-reveal="fade-up">
+          <span class="editorial-badge">02 // TECH STACK</span>
+        </div>
+
+        <div class="section-heading-box text-center" data-reveal="fade-up">
+          <h2 class="section-title">Focused &amp; Battle-Tested Technologies</h2>
+          <p class="section-subtitle">
+            Core web standards and modern development tooling I master, apply, and consistently rely on for production-ready websites.
+          </p>
+        </div>
+
+        <div class="tech-grid" data-reveal="fade-up">
+          <!-- Stack Item 1: HTML5 -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 3h16l-1.5 15.5L12 21l-6.5-2.5L4 3z"/>
+                <path d="M8 8h8M8 12h7M9 16l3 1 3-1"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">Semantic HTML5</h3>
+                <span class="tech-badge">Foundation</span>
+              </div>
+              <p class="tech-desc">
+                Structuring clean web documents with standard semantic tags (<code class="inline-code">&lt;header&gt;</code>, <code class="inline-code">&lt;main&gt;</code>, <code class="inline-code">&lt;article&gt;</code>) for accessibility, clarity, and search engine readiness.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stack Item 2: CSS3 -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 3h16l-1.5 15.5L12 21l-6.5-2.5L4 3z"/>
+                <path d="M16 8H8v4h7l-.5 4.5-2.5 1-2.5-1-.2-2"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">CSS3 &amp; Modern Layouts</h3>
+                <span class="tech-badge">Styling &amp; UX</span>
+              </div>
+              <p class="tech-desc">
+                Mastery of CSS Flexbox, CSS Grid, Custom Properties (variables), fluid typography, and hardware-accelerated transitions without external framework overhead.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stack Item 3: Vanilla JavaScript -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="3"/>
+                <path d="M8 17c1.5 1 3 0 3-2v-4M15 17c2 0 3-1 3-3s-1-2-2-2-2 0-2-1 1-1 2-1"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">Vanilla JavaScript</h3>
+                <span class="tech-badge">Interactivity</span>
+              </div>
+              <p class="tech-desc">
+                DOM manipulation, event delegation, dynamic catalog filtering, interactive modals, form validation, and modern Web APIs without framework dependencies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stack Item 4: Responsive Design -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">Responsive Web Design</h3>
+                <span class="tech-badge">Mobile First</span>
+              </div>
+              <p class="tech-desc">
+                Fluid layout engineering using intelligent media queries and viewport units, ensuring flawless presentation across mobile phones, tablets, and wide screens.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stack Item 5: Git & GitHub -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="18" r="3"/>
+                <circle cx="6" cy="6" r="3"/>
+                <circle cx="18" cy="6" r="3"/>
+                <path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9M12 12v3"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">Git &amp; Version Control</h3>
+                <span class="tech-badge">Workflow</span>
+              </div>
+              <p class="tech-desc">
+                Disciplined commit history, feature branching, and clean repository maintenance on GitHub to ensure reliable code versioning.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stack Item 6: DevTools & Performance -->
+          <div class="tech-item-card">
+            <div class="tech-icon-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <div class="tech-body">
+              <div class="tech-top">
+                <h3 class="tech-name">Web Performance Audit</h3>
+                <span class="tech-badge">Optimization</span>
+              </div>
+              <p class="tech-desc">
+                Asset minification, cumulative layout shift elimination, and rigorous performance benchmarking using Chrome DevTools and Google Lighthouse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         5. SERVICES SECTION (3 CORE SERVICES)
+         ======================================================== -->
+    <section class="site-section services-section" id="services">
+      <div class="container">
+        <div class="section-badge-wrap text-center" data-reveal="fade-up">
+          <span class="editorial-badge">03 // SERVICES</span>
+        </div>
+
+        <div class="section-heading-box text-center" data-reveal="fade-up">
+          <h2 class="section-title">Website Development Services</h2>
+          <p class="section-subtitle">
+            Focused, professional web development services tailored to help businesses establish a credible and high-converting online presence.
+          </p>
+        </div>
+
+        <div class="services-cards-grid">
+          <!-- Service 1: Landing Page Development -->
+          <div class="service-editorial-card" data-reveal="fade-up">
+            <div class="service-card-number">01</div>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <h3 class="service-heading">Landing Page Development</h3>
+            <p class="service-paragraph">
+              Modern landing pages designed to introduce products, promote services, and encourage visitors to take action with strategic Call-to-Action placement.
+            </p>
+
+            <div class="service-features-block">
+              <span class="features-label">Deliverables &amp; Features:</span>
+              <ul class="service-deliverables">
+                <li>Conversion-focused single-page architecture and clean visual hierarchy</li>
+                <li>100% fluid responsive presentation on smartphones, tablets, and desktops</li>
+                <li>Ultra-fast page load speeds without bloated third-party frameworks</li>
+                <li>Direct integration of Call-to-Action buttons to WhatsApp or Email</li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/6281210119304?text=Hello%20Valldiii%2C%20I%20would%20like%20to%20discuss%20a%20Landing%20Page%20Development%20project." target="_blank" rel="noopener noreferrer" class="btn btn-service-cta" aria-label="Inquire about Landing Page Development via WhatsApp">
+              <span>Discuss Landing Page</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 2: Small Business Website Development -->
+          <div class="service-editorial-card" data-reveal="fade-up">
+            <div class="service-card-number">02</div>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="service-heading">Small Business Website Development</h3>
+            <p class="service-paragraph">
+              Professional websites that help small businesses showcase their products, services, and business information online to attract local and global customers.
+            </p>
+
+            <div class="service-features-block">
+              <span class="features-label">Deliverables &amp; Features:</span>
+              <ul class="service-deliverables">
+                <li>Clean digital storefront highlighting products, menus, or service offerings</li>
+                <li>Clear business information: operational hours, location, and contact channels</li>
+                <li>Direct WhatsApp order &amp; consultation buttons for frictionless client communication</li>
+                <li>Lightweight structure ensuring seamless browsing even on limited mobile data</li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/6281210119304?text=Hello%20Valldiii%2C%20I%20would%20like%20to%20discuss%20a%20Small%20Business%20Website%20project." target="_blank" rel="noopener noreferrer" class="btn btn-service-cta" aria-label="Inquire about Small Business Website Development via WhatsApp">
+              <span>Discuss Business Website</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 3: Company Profile Website Development -->
+          <div class="service-editorial-card" data-reveal="fade-up">
+            <div class="service-card-number">03</div>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <h3 class="service-heading">Company Profile Website Development</h3>
+            <p class="service-paragraph">
+              Professional websites that introduce businesses, organizations, and their brand identity with authoritative storytelling and structured credibility.
+            </p>
+
+            <div class="service-features-block">
+              <span class="features-label">Deliverables &amp; Features:</span>
+              <ul class="service-deliverables">
+                <li>Structured brand presentation: company story, mission, core values, and team</li>
+                <li>Comprehensive service breakdowns, service tiers, and interactive galleries</li>
+                <li>Multi-channel client contact points with automated WhatsApp message generation</li>
+                <li>Accessible, SEO-optimized markup built for brand authority and trust</li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/6281210119304?text=Hello%20Valldiii%2C%20I%20would%20like%20to%20discuss%20a%20Company%20Profile%20Website%20project." target="_blank" rel="noopener noreferrer" class="btn btn-service-cta" aria-label="Inquire about Company Profile Website Development via WhatsApp">
+              <span>Discuss Company Profile</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         6. SELECTED PROJECTS SECTION
+         ======================================================== -->
+    <section class="site-section projects-section" id="projects">
+      <div class="container">
+        <div class="section-badge-wrap" data-reveal="fade-up">
+          <span class="editorial-badge">04 // SELECTED PROJECTS</span>
+        </div>
+
+        <div class="section-heading-box" data-reveal="fade-up">
+          <h2 class="section-title">Featured Project Showcase</h2>
+          <p class="section-subtitle">
+            Functional demonstrations crafted with pure code to showcase responsive layouts, interactive JavaScript logic, and real-world utility.
+          </p>
+        </div>
+
+        <!-- Featured Project 1: Valldiii Coffee Shop -->
+        <article class="featured-project-card" data-reveal="fade-up" id="project-coffee">
+          <div class="project-card-grid">
+            <!-- Left: High-Fidelity Browser Frame Preview with Live Toggle -->
+            <div class="project-mockup-wrapper">
+              <div class="project-browser-window">
+                <div class="browser-window-header">
+                  <div class="browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="browser-address">
+                    <span class="addr-lock">🔒</span> projects/coffee-shop/index.html
+                  </div>
+                  <div class="browser-tag-status">Live Demo</div>
+                </div>
+
+                <!-- Preview Canvas / Interactive Frame -->
+                <div class="browser-preview-viewport">
+                  <!-- Real Interactive Embed of the Local Coffee Shop Project -->
+                  <iframe 
+                    src="projects/coffee-shop/index.html" 
+                    title="Interactive Preview of Valldiii Coffee Shop" 
+                    class="coffee-shop-iframe" 
+                    loading="lazy">
+                  </iframe>
+
+                  <!-- Floating Hover Overlay Button for Direct Action -->
+                  <div class="preview-direct-overlay">
+                    <a href="projects/coffee-shop/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Open Coffee Shop project in a new tab">
+                      <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+                      </svg>
+                      <span>Open Full Page</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Project Description & Technical Highlights -->
+            <div class="project-info-wrapper">
+              <div class="project-status-row">
+                <span class="project-flag">PORTFOLIO DEMO PROJECT</span>
+                <span class="project-year">2026</span>
+              </div>
+
+              <h3 class="project-title">Valldiii Coffee Shop</h3>
+
+              <p class="project-description">
+                A modern, welcoming coffee shop demo website built to showcase artisan beverage menus and local roasteries. Features instant category filtering (Coffee &amp; Non-Coffee) with pure vanilla JavaScript, an adaptive CSS Grid menu catalog, brand story section, and an intuitive quick-order workflow.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feature-bullet">
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Instant Menu Category Filter:</strong> Pure vanilla JavaScript filtering without page reload.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Adaptive CSS Grid:</strong> Menu cards cleanly align and automatically adapt across any device display.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Warm Artisan Aesthetic:</strong> Rich cafe color palette paired with bold, legible typography.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Semantic HTML5</span>
+                <span class="tech-tag">Custom CSS3</span>
+                <span class="tech-tag">Vanilla JavaScript</span>
+                <span class="tech-tag">CSS Grid</span>
+              </div>
+
+              <div class="project-actions-group">
+                <a href="projects/coffee-shop/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-open-coffee">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+                  </svg>
+                  <span>Open Live Demo</span>
+                </a>
+                <button type="button" class="btn btn-secondary" data-action="view-details" data-project="coffee" id="btn-coffee-details">
+                  <span>Technical Details</span>
+                </button>
+                <button type="button" class="btn btn-outline" data-action="view-source" data-project="coffee" id="btn-coffee-source" aria-label="Coffee Shop source code information">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="18" r="3"/>
+                    <circle cx="6" cy="6" r="3"/>
+                    <circle cx="18" cy="6" r="3"/>
+                    <path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9M12 12v3"/>
+                  </svg>
+                  <span>Source Code</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Featured Project 2: NUSA RASA – Catering & Food Service -->
+        <article class="featured-project-card" data-reveal="fade-up" id="project-nusarasa">
+          <div class="project-card-grid">
+            <!-- Left: High-Fidelity Browser Frame Preview with Live Toggle -->
+            <div class="project-mockup-wrapper">
+              <div class="project-browser-window">
+                <div class="browser-window-header">
+                  <div class="browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="browser-address">
+                    <span class="addr-lock">🔒</span> projects/nusa-rasa/index.html
+                  </div>
+                  <div class="browser-tag-status">Live Demo</div>
+                </div>
+
+                <!-- Preview Canvas / Interactive Frame -->
+                <div class="browser-preview-viewport">
+                  <!-- Real Interactive Embed of the Local Nusa Rasa Project -->
+                  <iframe 
+                    src="projects/nusa-rasa/index.html" 
+                    title="Interactive Preview of NUSA RASA Catering &amp; Food Service" 
+                    class="nusa-rasa-iframe" 
+                    loading="lazy">
+                  </iframe>
+
+                  <!-- Floating Hover Overlay Button for Direct Action -->
+                  <div class="preview-direct-overlay">
+                    <a href="projects/nusa-rasa/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Open NUSA RASA project in a new tab">
+                      <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+                      </svg>
+                      <span>Open Full Page</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Project Description & Technical Highlights -->
+            <div class="project-info-wrapper">
+              <div class="project-status-row">
+                <span class="project-flag">PORTFOLIO DEMO PROJECT</span>
+                <span class="project-year">2026</span>
+              </div>
+
+              <h3 class="project-title">NUSA RASA – Catering &amp; Food Service</h3>
+
+              <p class="project-description">
+                A commercial company profile website demo crafted for a traditional culinary and catering business. Designed to provide visitors with a seamless experience through an interactive dish catalog, transparent buffet package comparison, event photography gallery, and an automated ordering inquiry form integrated directly with WhatsApp.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feature-bullet">
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Automated Order Generator:</strong> Form converts customer meal selections into pre-formatted WhatsApp messages.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Instant Menu Category Filter:</strong> Swift category switching (Lunch Box, Buffet, Ceremonial Tumpeng) with zero page reloads.</span>
+                </div>
+                <div class="feature-bullet">
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Refined Culinary Aesthetic:</strong> Harmonious color scheme of warm cream, deep forest green, and subtle gold accents.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Semantic HTML5</span>
+                <span class="tech-tag">Custom CSS3</span>
+                <span class="tech-tag">Vanilla JavaScript</span>
+                <span class="tech-tag">WhatsApp API</span>
+                <span class="tech-tag">Responsive</span>
+              </div>
+
+              <div class="project-actions-group">
+                <a href="projects/nusa-rasa/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-open-nusarasa">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+                  </svg>
+                  <span>Open Live Demo</span>
+                </a>
+                <button type="button" class="btn btn-secondary" data-action="view-details" data-project="nusarasa" id="btn-nusarasa-details">
+                  <span>Technical Details</span>
+                </button>
+                <button type="button" class="btn btn-outline" data-action="view-source" data-project="nusarasa" id="btn-nusarasa-source" aria-label="Nusa Rasa source code information">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="18" r="3"/>
+                    <circle cx="6" cy="6" r="3"/>
+                    <circle cx="18" cy="6" r="3"/>
+                    <path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9M12 12v3"/>
+                  </svg>
+                  <span>Source Code</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Secondary Projects Row: Practice Studies & Architectural Exploration -->
+        <div class="secondary-projects-grid">
+          <!-- Project 2: Creative Studio Landing Page Study -->
+          <article class="secondary-project-card" data-reveal="fade-up" id="project-agency">
+            <div class="card-browser-mockup">
+              <div class="mockup-top-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-slug">landing-page-concept.local</div>
+                <span class="mockup-tag">Layout Study</span>
+              </div>
+              <div class="mockup-screen-content agency-visual">
+                <div class="mini-hero-badge">One-Page Strategy</div>
+                <h4>High-Impact Creative Studio</h4>
+                <p>Conversion-driven layout engineered with decisive Call-to-Action placement.</p>
+                <div class="mini-metrics-strip">
+                  <span>⚡ 99+ Lighthouse</span>
+                  <span>📱 Fluid Breakpoint</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="secondary-card-body">
+              <div class="sec-meta-row">
+                <span class="sec-badge">LAYOUT STUDY</span>
+                <span class="sec-time">One-Page</span>
+              </div>
+              <h3 class="sec-title">Creative Studio Landing Page</h3>
+              <p class="sec-desc">
+                Exploration of a conversion-optimized single-page landing layout. Engineered with dense information hierarchy, high visual contrast, and instantaneous load times with zero third-party CSS.
+              </p>
+              <div class="sec-tech-row">
+                <span class="tech-tag-sm">Semantic HTML5</span>
+                <span class="tech-tag-sm">CSS Flexbox</span>
+                <span class="tech-tag-sm">Responsive</span>
+              </div>
+              <div class="sec-action-row">
+                <button type="button" class="btn btn-outline btn-sm" data-action="view-details" data-project="agency" id="btn-agency-details">
+                  <span>View Details</span>
+                </button>
+                <a href="#contact" class="btn btn-secondary btn-sm" id="btn-agency-consult">
+                  <span>Discuss Concept</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Simple Business Website Study -->
+          <article class="secondary-project-card" data-reveal="fade-up" id="project-business">
+            <div class="card-browser-mockup">
+              <div class="mockup-top-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-slug">business-profile-concept.local</div>
+                <span class="mockup-tag">Layout Study</span>
+              </div>
+              <div class="mockup-screen-content business-visual">
+                <div class="mini-hero-badge">Local Business</div>
+                <h4>Storefront &amp; Business Profile</h4>
+                <p>Featuring compact service listings, operating hours, and WhatsApp inquiry.</p>
+                <div class="mini-metrics-strip">
+                  <span>💬 Direct WhatsApp</span>
+                  <span>🏪 Easy to Manage</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="secondary-card-body">
+              <div class="sec-meta-row">
+                <span class="sec-badge">LAYOUT STUDY</span>
+                <span class="sec-time">Company Profile</span>
+              </div>
+              <h3 class="sec-title">Small Business &amp; Storefront Website</h3>
+              <p class="sec-desc">
+                A local business website concept engineered to display concise product and service catalogs, operating hours, location details, and direct customer communication via WhatsApp.
+              </p>
+              <div class="sec-tech-row">
+                <span class="tech-tag-sm">Semantic HTML5</span>
+                <span class="tech-tag-sm">CSS Grid</span>
+                <span class="tech-tag-sm">WhatsApp API</span>
+              </div>
+              <div class="sec-action-row">
+                <button type="button" class="btn btn-outline btn-sm" data-action="view-details" data-project="business" id="btn-business-details">
+                  <span>View Details</span>
+                </button>
+                <a href="#contact" class="btn btn-secondary btn-sm" id="btn-business-consult">
+                  <span>Discuss Concept</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         7. CONTACT SECTION (ACCURATE & VERIFIED CONTACTS)
+         ======================================================== -->
+    <section class="site-section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-editorial-frame" data-reveal="fade-up">
+          <div class="contact-header-content">
+            <span class="editorial-badge">05 // GET IN TOUCH</span>
+            <h2 class="contact-main-heading">Let's Build Something Meaningful Together.</h2>
+            <p class="contact-lead-text">
+              Have a website project in mind, need a high-converting landing page, or want a professional website for your business? Reach out directly through official WhatsApp or Email.
+            </p>
+          </div>
+
+          <!-- Dual Contact Cards Grid -->
+          <div class="contact-cards-grid">
+            <!-- Channel 1: WhatsApp Official -->
+            <div class="contact-card card-whatsapp">
+              <div class="contact-card-top">
+                <div class="contact-icon-wrapper wa-icon">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.49 0-2.95-.4-4.23-1.16l-.3-.18-3.14.82.84-3.06-.2-.31c-.83-1.33-1.27-2.87-1.27-4.46 0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4 1.55 1.55 2.4 3.61 2.4 5.8 0 4.52-3.68 8.19-8.2 8.19zm4.49-6.14c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+                  </svg>
+                </div>
+                <span class="channel-badge">Fastest Response</span>
+              </div>
+
+              <div class="contact-card-info">
+                <span class="channel-label">OFFICIAL WHATSAPP</span>
+                <span class="channel-main-value" id="text-whatsapp-display">081210119304</span>
+                <p class="channel-subtext">Directly connected to my personal WhatsApp chat.</p>
+              </div>
+
+              <div class="contact-card-actions">
+                <a href="https://wa.me/6281210119304" target="_blank" rel="noopener noreferrer" class="btn btn-wa-direct" id="btn-whatsapp-me" aria-label="Open WhatsApp Chat">
+                  <span>Chat on WhatsApp</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                </a>
+                <button type="button" class="btn btn-copy" data-copy-target="081210119304" data-copy-type="WhatsApp number" aria-label="Copy WhatsApp number">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                  </svg>
+                  <span>Copy Number</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Channel 2: Email Official -->
+            <div class="contact-card card-email">
+              <div class="contact-card-top">
+                <div class="contact-icon-wrapper email-icon">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <span class="channel-badge">Detailed Briefs</span>
+              </div>
+
+              <div class="contact-card-info">
+                <span class="channel-label">OFFICIAL EMAIL</span>
+                <span class="channel-main-value" id="text-email-display">aftaasifaasifa33083@gmail.com</span>
+                <p class="channel-subtext">Ideal for project proposals, requirement briefs, or documents.</p>
+              </div>
+
+              <div class="contact-card-actions">
+                <a href="mailto:aftaasifaasifa33083@gmail.com?subject=Website%20Project%20Inquiry%20-%20Valldiii" class="btn btn-email-direct" id="btn-email-me" aria-label="Send Email to Valldiii">
+                  <span>Send Email</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                </a>
+                <button type="button" class="btn btn-copy" data-copy-target="aftaasifaasifa33083@gmail.com" data-copy-type="Email address" aria-label="Copy email address">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                  </svg>
+                  <span>Copy Email</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       8. FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content-wrap">
+      <div class="footer-top-row">
+        <div class="footer-brand-box">
+          <a href="#home" class="brand-logo footer-logo">
+            <span class="logo-text">VALLDIII</span>
+            <span class="logo-dot">.</span>
+          </a>
+          <p class="footer-mission">
+            Freelance Web Developer &amp; Computer Science Student. Dedicated to clean semantic code, fast performance, and dependable client satisfaction.
+          </p>
+        </div>
+
+        <nav class="footer-nav-menu" aria-label="Footer Quick Links">
+          <span class="footer-col-title">Quick Navigation</span>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact-box">
+          <span class="footer-col-title">Direct Inquiries</span>
+          <p class="footer-contact-item">
+            <strong>WhatsApp:</strong> <a href="https://wa.me/6281210119304" target="_blank" rel="noopener noreferrer">081210119304</a>
+          </p>
+          <p class="footer-contact-item">
+            <strong>Email:</strong> <a href="mailto:aftaasifaasifa33083@gmail.com">aftaasifaasifa33083@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-divider-line"></div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-info">
+          &copy; <span id="current-year">2026</span> <strong>VALLDIII</strong>. All rights reserved.
+        </p>
+        <p class="built-with-note">
+          Built with Semantic HTML5, Modern CSS3, and Vanilla JavaScript.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       9. BACK TO TOP BUTTON
+       ======================================================== -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- ========================================================
+       10. PROJECT DETAIL MODAL DIALOG
+       ======================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" hidden>
+    <div class="modal-dialog-box">
+      <div class="modal-head">
+        <span class="modal-type-tag" id="modal-category">Technical Details</span>
+        <button type="button" class="modal-close-btn" id="modal-close" aria-label="Close project details dialog">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body-content">
+        <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+        <p class="modal-description" id="modal-project-desc">Project architectural overview and goals.</p>
+
+        <div class="modal-section-block">
+          <h4 class="modal-block-heading">Key Features &amp; Implementation:</h4>
+          <ul class="modal-bullets-list" id="modal-features-list">
+            <!-- Dynamically populated by JavaScript -->
+          </ul>
+        </div>
+
+        <div class="modal-section-block">
+          <h4 class="modal-block-heading">Technologies Used:</h4>
+          <div class="modal-tech-pills" id="modal-tech-stack">
+            <!-- Dynamically populated by JavaScript -->
+          </div>
+        </div>
+
+        <div class="modal-section-block" id="modal-source-block">
+          <h4 class="modal-block-heading">Source Code Availability:</h4>
+          <p class="modal-source-note" id="modal-source-note">Available in local project directory.</p>
+        </div>
+      </div>
+
+      <div class="modal-foot-actions">
+        <button type="button" class="btn btn-secondary btn-sm" id="modal-btn-dismiss">Close</button>
+        <a href="#" class="btn btn-primary btn-sm" id="modal-btn-action" target="_blank" rel="noopener noreferrer">Open Project</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-hub" id="toast-hub" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js?v=3.1"></script>
+</body>
+</html>
